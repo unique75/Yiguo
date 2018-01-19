@@ -1,0 +1,74 @@
+{
+    "floor1": {
+        "floor_id": "F1",
+        "floortit": "进口水果",
+        "keywords": [
+            "进口苹果",
+            "佳沛专区",
+            "泰国鲜果"
+        ],
+        "floor_slide": "http://img06.yiguoimg.com/e/others/170217/9288701136937553.jpg",
+        "floor_main": [
+            "http://img06.yiguoimg.com/d/others/180108/9288717661578280.jpg",
+            "http://img05.yiguoimg.com/d/others/180108/9288717661840424.jpg",
+            "http://img07.yiguoimg.com/d/others/171102/9288714534265698.jpg",
+            "http://img07.yiguoimg.com/d/others/171205/9288716094317445.jpg",
+            "http://img07.yiguoimg.com/d/others/180108/9288717661971496.jpg",
+            "http://img05.yiguoimg.com/d/others/171206/9288716106802054.jpg"
+        ]
+    },
+    "floor2": {
+        "floor_id": "F2",
+        "floortit": "国产水果",
+        "keywords": [
+            "芒香四溢",
+            "南国风情",
+            "精选苹果"
+        ],
+        "floor_slide": "http://img06.yiguoimg.com/d/others/171128/9288715745272700.jpg",
+        "floor_main": [
+            "http://img05.yiguoimg.com/d/others/171205/9288716093563781.jpg",
+            "http://img06.yiguoimg.com/d/others/171130/9288715865039742.jpg",
+            "http://img06.yiguoimg.com/e/others/170210/9288700985745994.jpg",
+            "http://img05.yiguoimg.com/d/others/171205/9288716094022533.jpg",
+            "http://img05.yiguoimg.com/d/others/171117/9288715236942705.jpg",
+            "http://img05.yiguoimg.com/d/others/171128/9288715777254268.jpg"
+        ]
+    },
+    "floor3": {
+        "floor_id":"F3",
+        "floortit": "新鲜蔬菜",
+        "keywords": [
+            "即食色拉",
+            "人气粗粮",
+            "健康有机"
+        ],
+        "floor_slide": "http://img05.yiguoimg.com/e/others/161125/9288698866639225.jpg",
+        "floor_main": [
+            "http://img06.yiguoimg.com/e/others/170508/9288707491766952.jpg",
+            "http://img06.yiguoimg.com/e/others/170621/9288709365834453.jpg",
+            "http://img06.yiguoimg.com/e/others/161103/9288698271998307.jpg",
+            "http://img07.yiguoimg.com/d/others/180111/9288717836657707.jpg",
+            "http://img06.yiguoimg.com/d/others/180104/9288717475554340.jpg",
+            "http://img06.yiguoimg.com/d/others/180104/9288717476766756.jpg"
+        ]
+    },
+    "floor4": {
+        "floor_id":"F4",
+        "floortit": "海鲜水产",
+        "keywords": [
+            "刺身专区",
+            "东海水产",
+            "海产干货"
+        ],
+        "floor_slide": "http://img06.yiguoimg.com/d/others/171102/9288714534036322.jpg",
+        "floor_main": [
+            "http://img06.yiguoimg.com/e/others/170809/9288711286039305.jpg",
+            "http://img06.yiguoimg.com/e/others/161130/9288699026514302.jpg",
+            "http://img07.yiguoimg.com/e/others/170527/9288708394394299.jpg",
+            "http://img06.yiguoimg.com/d/others/180103/9288717445506083.jpg",
+            "http://img07.yiguoimg.com/e/others/161208/9288699281514888.jpg",
+            "http://img05.yiguoimg.com/d/others/170822/9288711929537302.jpg"
+        ]
+    }
+}

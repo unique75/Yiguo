@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script data-main="../js/projectjs/index.js" src="../js/require.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- site-nav -->
+    <div id="site-nav">
+        <div class="wrap">
+            <ul class="fl">
+                <li>欢迎光临易果生鲜！</li>
+                <li class="city">
+                    <div class="city-sz">配送至：</div>
+                    <div class="city-tit">
+                        <a class="city-name" href="javascript:;">上海<s></s></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li class="tel"><a rel="nofollow" href="javascript:;" target="_blank"><i></i>提货券入口</a></li>
+                <li class="pay"><a rel="nofollow" href="javascript:;" target="_blank"><i></i>储值卡</a></li>
+                <li class="mobile">
+                    <div class="tit"><a href="javascript:void(0)"><i></i>手机易果<s></s></a></div>
+                    <div class="con">
+                        <div class="item"><img src="javascript:;" width="125" height="125"><span>扫一扫下载APP</span></div>
+                        <div class="item"><img src="javascript:;" width="125" height="125"><span>易果生鲜微信</span></div>
+                    </div>
+                </li>
+                <li class="myyiguo">
+                    <div class="tit"><a rel="nofollow" href="javascript:;" target="_blank"><i></i>我的易果<s></s></a></div>
+                    <div class="con">
+                        <a rel="nofollow" href="javascript:;">我的订单</a>
+                        <a rel="nofollow" href="javascript:;">我的优惠券<b id="coupon">0</b></a>
+                        <a rel="nofollow" href="javascript:;">我的收藏</a>
+                        <a rel="nofollow" href="javascript:;">我的悠币</a>
+                        <a rel="nofollow" href="javascript:;">我的退换货</a>
+                        <a rel="nofollow" href="javascript:;">预存款查询</a>
+                        <a rel="nofollow" href="javascript:;">立即充值</a>
+                        <a rel="nofollow" href="javascript:;" class="logout" style="display:none;">退出</a>
+                    </div>
+                </li>
+                <li id="_logout" style="display:none"><a href="javascript:;" class="logout">[退出]</a></li>
+                <li id="_loginname" style="display:none"><a rel="nofollow" href="javascript:;"></a></li>
+                <li id="_register" style=""><a rel="nofollow" href="javascript:;">[注册]</a></li>
+                <li id="_login" style="">
+                    <a rel="nofollow" href="javascript:;">[登录]</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header logo -->
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <h1><a href="javascript:;"></a></h1>
+            </div>
+            <div class="search">
+                <div class="search-bar clearfix">
+                    <input type="text" id="keyword" class="search-input" name="" value="输入商品名／编号／拼音">
+                    <input type="submit" class="search-btn" name="" value="搜索">
+                </div>
+                <div class="search-keywords" id="keywords">
+                    <!-- ajax+字母串模板加载 -->
+                </div>
+            </div>
+            <!-- 购物车 -->
+            <div class="shopping-cart">
+                <dl>
+                    <dt class="shopping-btn"><a href="javascript:;"> <span class="totleNum"><b>0</b></span><b class="totlePrice">0.0</b></a></dt>
+                    <dd class="shopping-list" style="display: none;">
+                        <div class="spacer"></div>
+                        <div class="nogoods" style="">
+                            购物车中还没有商品，赶紧选购吧！
+                        </div>
+                        <div class="goods" style="display: none;">
+                            <p id="deliveryType" style="display:none;">满100元包邮！</p>
+                            <ul></ul>
+                            <div class="price-total">
+                                <div><span class="totleNum">共<b>0</b>件商品</span><span>共计<b class="totlePrice">0.0</b></span></div>
+                                <div><a href="javascript:;" class="settleup">去购物车</a></div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+    <!-- header-nav 全部商品分类 -->
+    <section id="header-nav">
+        <div class="wrap">
+            <!--商品分类 开始-->
+            <div class="catalogs">
+
+                <div class="catalogs-title"><a href="javascript:;">全部商品分类▼</a></div>
+                <div class="catalogs-list block">
+
+                </div>
+            </div>
+            <!--商品分类 结束-->
+        </div>
+    </section>
+    <!-- banner -->
+    <section id="banner-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="http://img05.yiguoimg.com/d/others/180105/9288717561635877.jpg" /> 1</div>
+                <div class="swiper-slide"><img src="http://img07.yiguoimg.com/d/others/180110/9288717776233514.jpg" /></div>
+                <div class="swiper-slide"><img src="http://img07.yiguoimg.com/d/others/180118/9288718149231666.jpg" /></div>
+                <div class="swiper-slide"><img src="http://img07.yiguoimg.com/d/others/180115/9288718006953007.jpg" /></div>
+                <div class="swiper-slide"><img src="http://img06.yiguoimg.com/e/others/170208/9288700930171464.jpg" /></div>
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <!-- 活动、广告位 -->
+    <section class="wrap ad-item">
+        <ul>
+            <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="http://img06.yiguoimg.com/e/others/160303/9288692687216739.jpg" width="290">
+                    <p><b>新品专区</b>探访源头产地 臻选当令时鲜</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="http://img07.yiguoimg.com/e/others/160314/9288692888445038.jpg" width="290">
+                    <p><b>优质生活</b>美食有态度，生活更有味</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="http://img07.yiguoimg.com/d/others/180115/9288718007313455.jpg" width="290">
+                    <p><b>水果专区</b>全球水果最新鲜速递</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="http://img06.yiguoimg.com/e/others/170622/9288709403714262.jpg" width="290">
+                    <p><b>菜谱专栏</b>大厨私房菜 餐桌新食尚</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- 商品楼层 -->
+    <section class="floor wrap clearfix first-floor" id="t01_channelhome">
+        <!-- ajax+字母串模板加载 -->
+    </section>
+    <section class="floor wrap clearfix second-floor" id="t02_channelhome">
+        <!-- ajax+字母串模板加载 -->
+    </section>
+    <section class="floor wrap clearfix third-floor" id="t03_channelhome">
+        <!-- ajax+字母串模板加载 -->
+    </section>
+    <section class="floor wrap clearfix fourth-floor" id="t04_channelhome">
+        <!-- ajax+字母串模板加载 -->
+    </section>
+</body>
+<!-- 搜索关键字模板 -->
+<script id="searkeywords" type="text/html">
+    <% for(var i in data) { %>
+        <a href="javascript:;">
+            <%= data[i].Text %>
+        </a>
+        <% } %>
+</script>
+<!-- 全部商品分类模板 -->
+<script id="goodspanel" type="text/html">
+    <% for (var i in data) { %>
+        <div class="item">
+            <h3 class="<%= 't' + data[i].CategoryCode %>"><a href="javascript:;"><i></i><%= data[i].CategoryName %><s>&gt;</s></a></h3>
+            <div class="sub-item">
+                <h4><a href="javascript:;"><%= data[i].CategoryName %></a></h4>
+                <div class="sub-list">
+                    <% for (var j in data[i].SubCategory0) { %>
+                        <a href="javascript:;" target="_blank">
+                            <%= data[i].SubCategory0[j].CategoryName %>
+                        </a>
+                        <% } %>
+                </div>
+                <div class="catalogs-ad">
+                    <% for (var j in data[i].CategoryImageAd) { %>
+                        <a href="javascript:;"><img src="<%= data[i].CategoryImageAd[j].Image %>" alt=""></a>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+        <% } %>
+</script>
+<!-- 楼层 -->
+<script id="floor-less" type="text/html">
+    <div class="floor-title ">
+        <h2><a href="javascript:;" target="_blank"><i><%= data.floor_id %></i><%= data.floortit %></a></h2>
+        <span class="keyword">
+            <% for(var i in data.keywords) { %>
+                <a href="javascript:;" target="_blank" class=""><%= data.keywords[i] %></a>
+            <% } %>
+        </span>
+    </div>
+    <div class="floor-con floor-layout2">
+        <div class="floor-side"><a href="javascript:;" target="_blank"><img src="<%= data.floor_slide %>" width="275" height="463"></a></div>
+        <div class="floor-main">
+            <ul>
+                <% for(var i in data.floor_main) { %>
+                    <li><a href="javascript:;" target="_blank"><img src="<%= data.floor_main[i] %>" width="230" height="230"></a></li>
+
+                    <% } %>
+                        <!-- <li><a href="javascript:;" target="_blank"><img src="http://img05.yiguoimg.com/d/others/180108/9288717661840424.jpg" width="230" height="230"></a></li>
+                <li class="wide"><a href="javascript:;" target="_blank"><img src="http://img07.yiguoimg.com/d/others/171102/9288714534265698.jpg" width="461" height="230"></a></li>
+                <li class="wide"><a href="javascript:;" target="_blank"><img src="http://img07.yiguoimg.com/d/others/171205/9288716094317445.jpg" width="461" height="230"></a></li>
+                <li><a href="javascript:;" target="_blank"><img src="http://img07.yiguoimg.com/d/others/180108/9288717661971496.jpg" width="230" height="230"></a></li>
+                <li><a href="javascript:;" target="_blank"><img src="http://img05.yiguoimg.com/d/others/171206/9288716106802054.jpg" width="230" height="230"></a></li> -->
+            </ul>
+        </div>
+    </div>
+</script>
+
+</html>

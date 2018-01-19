@@ -1,0 +1,517 @@
+@charset "UTF-8";
+body,
+dd,
+dl,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+ol,
+option,
+p,
+td,
+textarea,
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #444; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+a,
+input {
+  outline: none; }
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 100; }
+
+em,
+i {
+  font-style: normal; }
+
+i,
+s {
+  display: inline-block;
+  vertical-align: middle; }
+
+body {
+  font: 12px Arial,Verdana,"\5b8b\4f53";
+  color: #444; }
+
+/*通用warp*/
+.wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+a:hover {
+  color: #008842; }
+
+/*site-nav*/
+#site-nav {
+  z-index: 99;
+  position: relative;
+  background: #f7f9f8; }
+  #site-nav .wrap {
+    height: 30px; }
+    #site-nav .wrap s {
+      position: absolute;
+      top: 13px;
+      right: 8px;
+      width: 8px;
+      height: 4px;
+      margin-left: 5px;
+      background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat 0 0; }
+    #site-nav .wrap .fl {
+      float: left; }
+      #site-nav .wrap .fl li {
+        float: left;
+        line-height: 30px;
+        margin-right: 10px; }
+      #site-nav .wrap .fl .city {
+        position: relative;
+        color: #008842; }
+      #site-nav .wrap .fl .city-sz {
+        float: left;
+        height: 16px;
+        line-height: 16px;
+        margin: 7px 0;
+        cursor: pointer; }
+      #site-nav .wrap .fl .city-tit {
+        float: left; }
+        #site-nav .wrap .fl .city-tit .city-name {
+          z-index: 100;
+          position: relative;
+          display: block;
+          float: left;
+          height: 20px;
+          line-height: 20px;
+          margin-top: 5px;
+          padding: 0 20px 5px 5px;
+          color: #008842;
+          cursor: pointer; }
+          #site-nav .wrap .fl .city-tit .city-name s {
+            top: 9px; }
+    #site-nav .wrap .fr {
+      float: right; }
+      #site-nav .wrap .fr li {
+        float: right;
+        position: relative;
+        line-height: 30px;
+        padding: 0 10px;
+        text-align: center; }
+      #site-nav .wrap .fr .con {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        border: 1px solid #b4c1a3;
+        background: #fff; }
+      #site-nav .wrap .fr i {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+        background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat left top; }
+      #site-nav .wrap .fr .tit a {
+        display: block;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 20px 0 10px;
+        cursor: pointer;
+        z-index: 100;
+        border: solid #f7f9f8;
+        border-width: 0 1px;
+        position: relative; }
+      #site-nav .wrap .fr .mobile {
+        padding: 0; }
+        #site-nav .wrap .fr .mobile i {
+          background-position: -64px 0; }
+        #site-nav .wrap .fr .mobile .con {
+          width: 125px;
+          padding: 10px;
+          line-height: 25px;
+          display: none; }
+          #site-nav .wrap .fr .mobile .con .item {
+            margin: 5px 0; }
+      #site-nav .wrap .fr .myyiguo {
+        padding: 0; }
+        #site-nav .wrap .fr .myyiguo i {
+          background-position: -40px 0; }
+        #site-nav .wrap .fr .myyiguo .con {
+          width: 100px;
+          padding: 5px 12px;
+          text-align: left;
+          display: none; }
+          #site-nav .wrap .fr .myyiguo .con a {
+            display: block;
+            line-height: 25px;
+            color: #727272; }
+          #site-nav .wrap .fr .myyiguo .con b {
+            margin-left: 10px;
+            padding: 0 5px;
+            color: #fff;
+            background: #008842;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            border-radius: 16px; }
+      #site-nav .wrap .fr .pay i {
+        width: 22px;
+        background-position: -147px 0; }
+      #site-nav .wrap .fr .tel i {
+        background-position: -86px 0; }
+
+.clearfix:after,
+.wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/*header*/
+header {
+  background: #e0e0e0; }
+  header .wrap {
+    height: 58px;
+    padding: 15px 0 5px; }
+    header .wrap .logo {
+      width: 280px;
+      float: left;
+      margin-right: 10px; }
+      header .wrap .logo a {
+        display: block;
+        width: 145px;
+        height: 50px;
+        background: url("http://static01.yiguo.com/www/images/header/logo.png") no-repeat 0 0; }
+    header .wrap .search {
+      position: relative;
+      width: 528px;
+      float: left; }
+      header .wrap .search .search-input {
+        float: left;
+        width: 425px;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 10px;
+        border: 1px solid #008842;
+        background: #e0e0e0;
+        color: #999; }
+      header .wrap .search .search-btn {
+        float: left;
+        display: block;
+        width: 81px;
+        height: 28px;
+        line-height: 28px;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        background: #008842; }
+      header .wrap .search .search-keywords {
+        height: 30px;
+        line-height: 30px; }
+        header .wrap .search .search-keywords a {
+          margin-right: 5px;
+          color: #727272;
+          display: inline-block; }
+    header .wrap .shopping-cart {
+      z-index: 88;
+      float: right;
+      position: relative; }
+      header .wrap .shopping-cart .shopping-btn {
+        width: 170px;
+        height: 28px;
+        padding: 6px 0;
+        line-height: 28px;
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid #008842;
+        background: #fff;
+        cursor: pointer; }
+        header .wrap .shopping-cart .shopping-btn a {
+          display: block;
+          color: #008842; }
+        header .wrap .shopping-cart .shopping-btn .totleNum {
+          display: inline-block;
+          vertical-align: middle;
+          width: 28px;
+          height: 20px;
+          margin-right: 10px;
+          font-size: 12px;
+          padding: 0;
+          background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat -112px 0; }
+          header .wrap .shopping-cart .shopping-btn .totleNum b {
+            display: block;
+            width: 24px;
+            line-height: 12px;
+            margin-right: 4px;
+            text-align: center; }
+
+/*header-nav*/
+#header-nav {
+  z-index: 77;
+  position: relative; }
+  #header-nav .catalogs {
+    float: left;
+    position: relative; }
+    #header-nav .catalogs .catalogs-title {
+      width: 180px;
+      height: 38px;
+      position: relative;
+      text-align: center;
+      background: #008842; }
+      #header-nav .catalogs .catalogs-title a {
+        overflow: hidden;
+        font: bold 15px/16px "Microsoft YaHei";
+        color: #fff;
+        display: block;
+        height: 16px;
+        padding: 11px 0; }
+    #header-nav .catalogs .catalogs-list {
+      position: absolute;
+      height: 462px;
+      background: rgba(255, 255, 255, 0.9); }
+      #header-nav .catalogs .catalogs-list .current h3 a {
+        z-index: 78;
+        padding: 8px 0 8px 15px;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid #bbb;
+        border-right: 0; }
+      #header-nav .catalogs .catalogs-list .current h3 i {
+        margin-left: 7px;
+        transition: all 0.2s ease-in; }
+      #header-nav .catalogs .catalogs-list .sub-item {
+        z-index: 3;
+        display: none;
+        position: absolute;
+        top: -38px;
+        left: 180px;
+        width: 215px;
+        height: 464px;
+        padding: 17px 20px;
+        border: 1px solid #bbb;
+        background: rgba(255, 255, 255, 0.9); }
+      #header-nav .catalogs .catalogs-list h3 a {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        width: 165px;
+        height: 24px;
+        padding: 9px 0 9px 15px;
+        font: normal 14px/24px "Microsoft YaHei"; }
+        #header-nav .catalogs .catalogs-list h3 a i {
+          overflow: hidden;
+          width: 24px;
+          height: 24px;
+          margin-right: 15px;
+          background: url("http://static01.yiguo.com/www/images/header/nav-icon.png") no-repeat 0 0;
+          -webkit-transition: all 0.3s ease-in;
+          -moz-transition: all 0.3s ease-in;
+          -ms-transition: all 0.3s ease-in;
+          -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in; }
+        #header-nav .catalogs .catalogs-list h3 a s {
+          display: none;
+          position: absolute;
+          top: 7px;
+          right: 18px;
+          font-family: Arial;
+          text-decoration: none; }
+      #header-nav .catalogs .catalogs-list h4 {
+        margin-bottom: 10px;
+        font: normal 18px "Microsoft YaHei";
+        text-decoration: underline; }
+        #header-nav .catalogs .catalogs-list h4 a {
+          color: #20985a; }
+      #header-nav .catalogs .catalogs-list .sub-list {
+        display: inline-block;
+        line-height: 25px;
+        margin-right: 30px;
+        color: #686868; }
+        #header-nav .catalogs .catalogs-list .sub-list a {
+          display: inline-block;
+          line-height: 25px;
+          margin-right: 30px;
+          color: #686868; }
+      #header-nav .catalogs .catalogs-list .catalogs-ad {
+        position: absolute;
+        bottom: 10px; }
+        #header-nav .catalogs .catalogs-list .catalogs-ad a {
+          display: block; }
+      #header-nav .catalogs .catalogs-list .t01_channelhome a i {
+        background-position: 0 0; }
+      #header-nav .catalogs .catalogs-list .t02_channelhome a i {
+        background-position: -24px 0; }
+      #header-nav .catalogs .catalogs-list .t03_channelhome a i {
+        background-position: -144px 0; }
+      #header-nav .catalogs .catalogs-list .t04_channelhome a i {
+        background-position: -96px 0; }
+      #header-nav .catalogs .catalogs-list .t05_channelhome a i {
+        background-position: -48px 0; }
+      #header-nav .catalogs .catalogs-list .t06_channelhome a i {
+        background-position: -72px 0; }
+      #header-nav .catalogs .catalogs-list .t012_channelhome a i {
+        background-position: 0 0; }
+      #header-nav .catalogs .catalogs-list .t08_channelhome a i {
+        background-position: -120px 0; }
+      #header-nav .catalogs .catalogs-list .t10_channelhome a i {
+        background-position: -168px 0; }
+      #header-nav .catalogs .catalogs-list .t07_channelhome a i {
+        background-position: -192px 0; }
+      #header-nav .catalogs .catalogs-list .t09_channelhome a i {
+        background-position: -216px 0; }
+      #header-nav .catalogs .catalogs-list .t11_channelhome a i {
+        background-position: -240px 0; }
+
+/*banner-slider*/
+#banner-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  top: -38px; }
+  #banner-slider .swiper-container {
+    width: 100%;
+    height: 100%; }
+    #banner-slider .swiper-container img {
+      height: 100%;
+      left: -10%; }
+
+/*活动、广告位*/
+.ad-item ul {
+  zoom: 1;
+  margin-left: -12px;
+  margin-top: 10px;
+  padding-top: 7px; }
+  .ad-item ul li {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    width: 290px;
+    height: 290px;
+    margin: 0 0 10px 13px; }
+    .ad-item ul li p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 270px;
+      height: 57px;
+      line-height: 25px;
+      margin: 10px;
+      color: #575757;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background: rgba(255, 255, 255, 0.9); }
+      .ad-item ul li p b {
+        display: block;
+        font: bold 22px "Microsoft YaHei";
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+
+/*楼层*/
+#t01_channelhome h2 a {
+  color: #fc5f3c; }
+
+#t01_channelhome h2 i {
+  background-position: 0 0; }
+
+#t02_channelhome h2 a {
+  color: #007f4d; }
+
+#t02_channelhome h2 i {
+  background-position: -46px 0; }
+
+#t03_channelhome h2 a {
+  color: #bcc257; }
+
+#t03_channelhome h2 i {
+  background-position: -276px 0; }
+
+#t04_channelhome h2 a {
+  color: #45c6ce; }
+
+#t04_channelhome h2 i {
+  background-position: -184px 0; }
+
+.floor {
+  clear: both;
+  position: relative;
+  margin-top: 18px; }
+  .floor .floor-title {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 5px; }
+    .floor .floor-title h2 {
+      float: left;
+      height: 32px;
+      font: bold 18px "Microsoft YaHei"; }
+    .floor .floor-title i {
+      display: inline-block;
+      width: 31px;
+      height: 18px;
+      margin-right: 10px;
+      padding: 10px 7px 4px;
+      color: #fff;
+      font: bold 14px "Microsoft YaHei";
+      vertical-align: text-bottom;
+      background: url("http://static01.yiguo.com/www/images/floor_tit_icon.png") no-repeat left top; }
+    .floor .floor-title .keyword {
+      float: right; }
+      .floor .floor-title .keyword a {
+        color: #4e4e4e; }
+        .floor .floor-title .keyword a:after {
+          content: "|";
+          padding: 0 7px; }
+      .floor .floor-title .keyword a.last {
+        content: "";
+        padding: 0; }
+  .floor .floor-con .floor-side {
+    float: left;
+    width: 275px;
+    height: 462px; }
+    .floor .floor-con .floor-side .floor-side a {
+      display: block; }
+  .floor .floor-layout2 .floor-main {
+    width: 924px;
+    height: 462px;
+    border-top: 1px solid #d5d5d5;
+    border-left: 1px solid #d5d5d5;
+    position: relative;
+    float: left;
+    background: #fff; }
+    .floor .floor-layout2 .floor-main a {
+      display: block; }
+  .floor .floor-layout2 li {
+    float: left;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5; }
+  .floor .floor-layout2 .wide {
+    width: 461px; }

@@ -1,0 +1,197 @@
+@import "reset.scss";
+@import "common.scss"; /*banner-slider*/
+
+#banner-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: -38px;
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+
+        img {
+            height: 100%;
+            // position: absolute;
+            left: -10%;
+            // margin-left: -600px;
+        }
+    }
+}
+/*活动、广告位*/
+
+.ad-item {
+    // margin-top: -25px;
+    ul {
+        zoom: 1;
+        margin-left: -12px;
+        margin-top: 10px;
+        padding-top: 7px;
+
+        li {
+            position: relative;
+            overflow: hidden;
+            float: left;
+            display: inline;
+            width: 290px;
+            height: 290px;
+            margin: 0 0 10px 13px;
+
+            p {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 270px;
+                height: 57px;
+                line-height: 25px;
+                margin: 10px;
+                color: #575757;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                background: rgba(255, 255, 255, 0.9);
+
+                b {
+                    display: block;
+                    font: bold 22px "Microsoft YaHei";
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+/*楼层*/
+
+#t01_channelhome h2 {
+    a {
+        color: #fc5f3c;
+    }
+
+    i {
+        background-position: 0 0;
+    }
+}
+
+#t02_channelhome h2 {
+    a {
+        color: #007f4d;
+    }
+
+    i {
+        background-position: -46px 0;
+    }
+}
+#t03_channelhome h2 {
+    a {
+        color: #bcc257;
+    }
+
+    i {
+        background-position: -276px 0;
+    }
+}
+#t04_channelhome h2 {
+    a {
+        color: #45c6ce;
+    }
+
+    i {
+        background-position: -184px 0;
+    }
+}
+
+.floor {
+    clear: both;
+    position: relative;
+    margin-top: 18px;
+
+    .floor-title {
+        position: relative;
+        height: 32px;
+        line-height: 32px;
+        margin-bottom: 5px;
+
+        h2 {
+            float: left;
+            height: 32px;
+            font: bold 18px "Microsoft YaHei";
+        }
+
+        i {
+            display: inline-block;
+            width: 31px;
+            height: 18px;
+            margin-right: 10px;
+            padding: 10px 7px 4px;
+            color: #fff;
+            font: bold 14px "Microsoft YaHei";
+            vertical-align: text-bottom;
+            background: url("http://static01.yiguo.com/www/images/floor_tit_icon.png") no-repeat left top;
+        }
+
+        .keyword {
+            float: right;
+
+            a {
+                color: #4e4e4e;
+
+                &:after {
+                    content: "|";
+                    padding: 0 7px;
+                }
+            }
+
+            a.last {
+                content: "";
+                padding: 0;
+            }
+        }
+    }
+
+    .floor-con {
+        .floor-side {
+            float: left;
+            width: 275px;
+            height: 462px;
+
+            .floor-side a {
+                display: block;
+            }
+        }
+    }
+
+    .floor-layout2 {
+        .floor-main {
+            width: 924px;
+            height: 462px;
+            border-top: 1px solid #d5d5d5;
+            border-left: 1px solid #d5d5d5;
+            position: relative;
+            float: left;
+            background: #fff;
+
+            a {
+                display: block;
+            }
+        }
+
+        li {
+            float: left;
+            overflow: hidden;
+            width: 230px;
+            height: 230px;
+            border-right: 1px solid #d5d5d5;
+            border-bottom: 1px solid #d5d5d5;
+        }
+
+        .wide {
+            width: 461px;
+        }
+    }
+}

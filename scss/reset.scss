@@ -1,0 +1,66 @@
+body,
+dd,
+dl,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+ol,
+option,
+p,
+td,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+a,
+input {
+    outline: none;
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 100;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+i,
+s {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body {
+    font: 12px Arial,Verdana,"\5b8b\4f53";
+    color: #444;
+}
