@@ -1,6 +1,6 @@
 @import "reset.scss";
-@import "common.scss"; /*banner-slider*/
-
+@import "common.scss";
+/*banner-slider*/
 #banner-slider {
     overflow: hidden;
     position: relative;
@@ -21,7 +21,6 @@
     }
 }
 /*活动、广告位*/
-
 .ad-item {
     // margin-top: -25px;
     ul {
@@ -67,7 +66,6 @@
     }
 }
 /*楼层*/
-
 #t01_channelhome h2 {
     a {
         color: #fc5f3c;
@@ -87,6 +85,7 @@
         background-position: -46px 0;
     }
 }
+
 #t03_channelhome h2 {
     a {
         color: #bcc257;
@@ -96,6 +95,7 @@
         background-position: -276px 0;
     }
 }
+
 #t04_channelhome h2 {
     a {
         color: #45c6ce;
@@ -103,6 +103,66 @@
 
     i {
         background-position: -184px 0;
+    }
+}
+
+#t05_channelhome h2 {
+    a {
+        color: #f0c000;
+    }
+
+    i {
+        background-position: -92px 0;
+    }
+}
+
+#t06_channelhome h2 {
+    a {
+        color: #e08683;
+    }
+
+    i {
+        background-position: -138px 0;
+    }
+}
+
+#t07_channelhome h2 {
+    a {
+        color: #b84f00;
+    }
+
+    i {
+        background-position: -368px 0;
+    }
+}
+
+#t08_channelhome h2 {
+    a {
+        color: #764e00;
+    }
+
+    i {
+        background-position: -230px 0;
+    }
+}
+
+#t09_channelhome h2 {
+    a {
+        color: #940606;
+    }
+
+    i {
+        background-position: -414px 0;
+    }
+}
+
+#t10_channelhome h2 {
+    a {
+        color: #3ca3dc;
+    }
+
+    i {
+        background-position: -531px 0;
     }
 }
 
@@ -146,11 +206,6 @@
                     padding: 0 7px;
                 }
             }
-
-            a.last {
-                content: "";
-                padding: 0;
-            }
         }
     }
 
@@ -160,8 +215,23 @@
             width: 275px;
             height: 462px;
 
-            .floor-side a {
+            a {
                 display: block;
+            }
+        }
+    }
+
+    .floor-main {
+        position: relative;
+        float: left;
+        background: #fff;
+
+        a {
+            display: block;
+            transition: all 0.2s linear;
+
+            &:hover {
+                transform: translateX(7px);
             }
         }
     }
@@ -172,13 +242,6 @@
             height: 462px;
             border-top: 1px solid #d5d5d5;
             border-left: 1px solid #d5d5d5;
-            position: relative;
-            float: left;
-            background: #fff;
-
-            a {
-                display: block;
-            }
         }
 
         li {
@@ -193,5 +256,217 @@
         .wide {
             width: 461px;
         }
+    }
+
+    .floor-layout3 {
+        .floor-main {
+            width: 923px;
+            height: 461px;
+            border: 1px solid #d5d5d5;
+        }
+
+        .col1 {
+            width: 234px;
+            height: 383px;
+            border-right: 1px solid #d5d5d5;
+            border-bottom: 1px solid #d5d5d5;
+            float: left;
+            overflow: hidden;
+        }
+
+        .col2 {
+            width: 442px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .col3 {
+            width: 246px;
+            height: 461px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .narrow {
+            width: 220px;
+        }
+
+        li {
+            float: left;
+            overflow: hidden;
+            height: 191px;
+            border-right: 1px solid #d5d5d5;
+            border-bottom: 1px solid #d5d5d5;
+            background: #fff;
+        }
+
+        .logo-list {
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 654px;
+            height: 55px;
+            padding: 11px;
+            border-right: 1px solid #d5d5d5;
+            background: #fff;
+
+            a {
+                float: left;
+                margin: 0 14px;
+            }
+        }
+    }
+}
+/*楼梯*/
+
+.floor-guide {
+    overflow: visible;
+    display: block;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    width: 35px;
+    height: 359px;
+    margin-left: -655px;
+    z-index: 100;
+    text-align: center;
+
+    a {
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: #666;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    b {
+        display: block;
+        width: 40px;
+        height: 40px;
+        visibility: visible;
+        background: url("http://static01.yiguo.com/www/images/floor_guide.png") no-repeat 0 0;
+    }
+
+    em {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+        width: 24px;
+        height: 29px;
+        padding: 6px 8px;
+        line-height: 14px;
+        font-style: normal;
+        color: #fff;
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
+    }
+
+    i {
+        display: block;
+        width: 10px;
+        margin: auto;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        border-top: 1px solid #d7d7d7;
+    }
+
+    .current b {
+        display: none;
+    }
+
+    .icon_01_channelhome {
+        background-position: 0 0;
+    }
+
+    .icon_02_channelhome {
+        background-position: -40px 0;
+    }
+
+    .icon_03_channelhome {
+        background-position: -240px 0;
+    }
+
+    .icon_04_channelhome {
+        background-position: -160px 0;
+    }
+
+    .icon_05_channelhome {
+        background-position: -80px 0;
+    }
+
+    .icon_06_channelhome {
+        background-position: -120px 0;
+    }
+
+    .icon_07_channelhome {
+        background-position: -320px 0;
+    }
+
+    .icon_08_channelhome {
+        background-position: -200px 0;
+    }
+
+    .icon_09_channelhome {
+        background-position: -360px 0;
+    }
+
+    .icon_10_channelhome {
+        background-position: -280px 0;
+    }
+}
+/*footer-service*/
+.footer-service {
+    background: #e0e0e0;
+    margin-top: 50px;
+    padding: 30px 0;
+
+    li {
+        float: left;
+        width: 190px;
+        height: 42px;
+        margin-left: 55px;
+        _margin-left: 44px;
+        padding-left: 55px;
+        background: url("http://static01.yiguo.com/www/images/footer_service_icon.png") no-repeat left top;
+
+        b {
+            display: block;
+            padding-left: 15px;
+            color: #007f4d;
+            font: normal 18px/25px "Microsoft YaHei";
+            border-left: 1px solid #a6a6a6;
+        }
+
+        span {
+            display: block;
+            padding-left: 15px;
+            border-left: 1px solid #a6a6a6;
+        }
+    }
+
+    .s1 {
+        background-position: 0 0;
+    }
+
+    .s2 {
+        background-position: 0 -42px;
+    }
+
+    .s3 {
+        background-position: 0 -84px;
+    }
+
+    .s4 {
+        background-position: 0 -126px;
     }
 }

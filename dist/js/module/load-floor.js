@@ -3,10 +3,11 @@ define(['jquery'], function($) {
         constructor() {
 
         }
-        init(str, box, obj) {
+        init(str, box, temId, callback) {
             this.str = str
             this.$box = box;
-            this.obj = obj;
+            this.temId = temId;
+            this.callback = callback;
             var setup = {
                 url: '/json/floor.json',
                 type: 'GET',
@@ -19,24 +20,12 @@ define(['jquery'], function($) {
             for (var i in res[this.str]) {
                 // console.log(res[this.str]);
                 // console.log(this.$box);
-                var str = template('floor-less', res[this.str]);
+                var str = template(this.temId, res[this.str]);
                 this.$box.html(str);
             }
-
-            this.change();
-        }
-        change() {
-            // console.log(this);
-            this.$box.find(this.obj.dom).eq(this.obj.num1).addClass(this.obj.classname).find('img').css({
-                'width': this.obj.width,
-                'height': this.obj.height
-            });
-            this.$box.find(this.obj.dom).eq(this.obj.num2).addClass(this.obj.classname).find('img').css({
-                'width': this.obj.width,
-                'height': this.obj.height
-            });
+            this.callback();
         }
     }
-    return LoadFloor;//index.js中需要多次调用这个通用函数，所以这里return不加new不加括号，
-                    //相当于返回了一个构造函数，在index.js中需要调用的话就new调用，需要调用几次就new几次
+    return LoadFloor; //index.js中需要多次调用这个通用函数，所以这里return不加new不加括号，
+    //相当于返回了一个构造函数，在index.js中需要调用的话就new调用，需要调用几次就new几次
 })

@@ -1,8 +1,19 @@
 @charset "UTF-8";
+#w {
+  background: #f7f8f8; }
+
 /*通用warp*/
 .wrap {
   width: 1200px;
   margin: 0 auto; }
+
+.clearfix:after,
+.wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
 
 a:hover {
   color: #008842; }
@@ -129,6 +140,42 @@ a:hover {
   visibility: hidden; }
 
 /*header*/
+.header_fixed {
+  z-index: 100;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+  background: url("../images/header/header_fixed_bg.png") repeat; }
+  .header_fixed .wrap {
+    height: 36px;
+    padding: 5px 0; }
+  .header_fixed .logo {
+    margin-right: 0; }
+    .header_fixed .logo a {
+      height: 36px;
+      height: 50px\9;
+      background-size: auto 100%; }
+  .header_fixed .search {
+    width: 770px;
+    margin-top: 3px; }
+    .header_fixed .search .search-bar {
+      float: left; }
+    .header_fixed .search .search-keywords {
+      overflow: hidden;
+      float: left;
+      width: 230px;
+      height: 28px;
+      margin-left: 10px; }
+  .header_fixed .shopping-btn {
+    width: 140px;
+    padding: 2px 0;
+    font-size: 20px; }
+  .header_fixed .shopping-list {
+    top: 33px; }
+
 header {
   background: #e0e0e0; }
   header .wrap {
@@ -207,6 +254,87 @@ header {
             line-height: 12px;
             margin-right: 4px;
             text-align: center; }
+      header .wrap .shopping-cart .shopping-list {
+        z-index: 88;
+        display: none;
+        position: absolute;
+        top: 41px;
+        right: 0;
+        width: 380px;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #007f4d; }
+        header .wrap .shopping-cart .shopping-list .nogoods {
+          width: 380px;
+          height: 120px;
+          display: none;
+          line-height: 120px;
+          text-align: center;
+          background: url("http://static01.yiguo.com/www/images/none-bg-w190.jpg") no-repeat center #fff; }
+        header .wrap .shopping-cart .shopping-list ul {
+          display: block;
+          position: relative;
+          overflow-x: hidden;
+          overflow-y: auto;
+          width: 380px;
+          max-height: 264px;
+          margin: 10px 0 0;
+          padding: 0; }
+          header .wrap .shopping-cart .shopping-list ul li {
+            position: relative;
+            overflow: hidden;
+            zoom: 1;
+            background: #fff;
+            height: 45px;
+            padding: 0 0 15px;
+            line-height: 20px; }
+            header .wrap .shopping-cart .shopping-list ul li .l {
+              float: left;
+              margin-right: 5px;
+              width: 45px;
+              height: 45px; }
+            header .wrap .shopping-cart .shopping-list ul li .c {
+              float: left;
+              width: 222px; }
+              header .wrap .shopping-cart .shopping-list ul li .c a {
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis; }
+            header .wrap .shopping-cart .shopping-list ul li .r {
+              float: left;
+              text-align: right;
+              width: 90px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+              header .wrap .shopping-cart .shopping-list ul li .r b {
+                color: #e7380d;
+                font-weight: bold; }
+              header .wrap .shopping-cart .shopping-list ul li .r a {
+                display: block;
+                color: #888; }
+        header .wrap .shopping-cart .shopping-list .price-total {
+          font-size: 12px;
+          line-height: 27px;
+          margin-top: 5px;
+          padding-top: 10px;
+          text-align: right;
+          border-top: 1px solid #dcdcdc; }
+          header .wrap .shopping-cart .shopping-list .price-total span {
+            margin-left: 15px; }
+          header .wrap .shopping-cart .shopping-list .price-total b {
+            color: #e7380d;
+            font-size: 16px;
+            margin: 0 5px; }
+          header .wrap .shopping-cart .shopping-list .price-total .settleup {
+            display: inline-block;
+            width: 75px;
+            height: 27px;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            background: #008842; }
 
 /*header-nav*/
 #header-nav {
@@ -323,3 +451,83 @@ header {
         background-position: -216px 0; }
       #header-nav .catalogs .catalogs-list .t11_channelhome a i {
         background-position: -240px 0; }
+
+.footer {
+  zoom: 1;
+  clear: both;
+  position: relative;
+  padding-bottom: 20px;
+  border-top: 1px solid #e0e0e0; }
+  .footer .wrap {
+    margin: 50px auto 0; }
+  .footer dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+    display: inline; }
+    .footer dl dt {
+      height: 23px;
+      line-height: 23px;
+      background: url("http://static01.yiguo.com/www/images/footer_icon.png") no-repeat;
+      font-size: 14px;
+      text-indent: 40px; }
+    .footer dl dd {
+      border-left: 1px dashed #A8A8A8;
+      padding-left: 20px;
+      height: 110px;
+      min-height: 110px;
+      margin: 15px 0 0 13px; }
+      .footer dl dd a {
+        color: #575556;
+        line-height: 22px; }
+  .footer .service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px; }
+    .footer .service span {
+      display: inline-block;
+      padding: 0 10px; }
+  .footer .copyright {
+    clear: both;
+    color: #717171;
+    text-align: center;
+    line-height: 22px; }
+    .footer .copyright a {
+      color: #717171; }
+  .footer .authentication a {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    zoom: 1;
+    vertical-align: middle; }
+  .footer .col1 dt {
+    background-position: 0 0; }
+  .footer .col2 dt {
+    background-position: 0 -23px; }
+  .footer .col3 dt {
+    background-position: 0 -46px; }
+  .footer .col4 dt {
+    background-position: 0 -69px; }
+  .footer .col5 dt {
+    background-position: 0 -92px; }
+
+/*右下角悬浮*/
+.sidebar {
+  display: block;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 47%;
+  margin-right: -625px;
+  width: 56px; }
+  .sidebar .s-btn {
+    overflow: hidden;
+    display: block;
+    width: 50px;
+    height: 42px;
+    margin-bottom: 10px;
+    background: url("http://static01.yiguo.com/www/images/sidebar.png") no-repeat 0 0; }
+  .sidebar .service {
+    background-position: 0 -46px; }

@@ -70,5 +70,159 @@
             "http://img07.yiguoimg.com/e/others/161208/9288699281514888.jpg",
             "http://img05.yiguoimg.com/d/others/170822/9288711929537302.jpg"
         ]
+    },
+    "floor5": {
+        "floor_id":"F5",
+        "floortit": "精选肉类",
+        "keywords": [
+            "欧洲天然猪",
+            "澳洲牛肉",
+            "肉类制品"
+        ],
+        "floor_slide": "http://img07.yiguoimg.com/d/others/170906/9288712415519526.jpg",
+        "floor_main": {
+            "col1":"http://img05.yiguoimg.com/e/others/170504/9288707378258596.jpg",
+            "col2":[
+                "http://img07.yiguoimg.com/d/others/170906/9288712415650598.jpg",
+                "http://img05.yiguoimg.com/e/others/170105/9288700023808549.jpg",
+                "http://img05.yiguoimg.com/d/others/170906/9288712415585062.jpg",
+                "http://img06.yiguoimg.com/e/others/161207/9288699249566087.jpg"
+            ],
+            "col3":"http://img05.yiguoimg.com/e/others/170502/9288707279823522.jpg",
+            "logo_list":[
+                "http://img05.yiguoimg.com/e/others/160420/9288693612060820.jpg",
+                "http://img05.yiguoimg.com/e/others/150929/9288685776248637.jpg",
+                "http://img07.yiguoimg.com/e/others/160329/9288693154226301.jpg",
+                "http://img06.yiguoimg.com/e/others/160617/9570169907257553.png"
+            ]
+        }
+    },
+    "floor6": {
+        "floor_id":"F6",
+        "floortit": "禽类蛋品",
+        "keywords": [
+            "原味蒸品",
+            "原汁煲汤",
+            "禽类分割品"
+        ],
+        "floor_slide": "http://img07.yiguoimg.com/e/others/170401/9288706104468097.jpg",
+        "floor_main": {
+            "col1":"http://img05.yiguoimg.com/d/others/170904/9288712344314660.jpg",
+            "col2":[
+                "http://img07.yiguoimg.com/e/others/170505/9288707404604069.jpg",
+                "http://img05.yiguoimg.com/d/others/170904/9288712344281892.jpg",
+                "http://img05.yiguoimg.com/d/others/170904/9288712336188196.jpg",
+                "http://img07.yiguoimg.com/d/others/170904/9288712344249124.jpg"
+            ],
+            "col3":"http://img06.yiguoimg.com/d/others/170906/9288712415748902.jpg",
+            "logo_list":[
+                "http://img05.yiguoimg.com/e/others/150927/9288685535567675.jpg",
+                "http://img05.yiguoimg.com/e/others/150927/9288685535436603.jpg",
+                "http://img07.yiguoimg.com/e/others/151106/9288689588215654.jpg",
+                "http://img05.yiguoimg.com/e/others/151116/9288689776533360.jpg"
+            ]
+        }
+    },
+    "floor7": {
+        "floor_id":"F7",
+        "floortit": "粮油杂货",
+        "keywords": [
+            "休闲零食",
+            "健康杂粮",
+            "进口食用油"
+        ],
+        "floor_slide": "http://img07.yiguoimg.com/e/others/170317/9288705349755505.jpg",
+        "floor_main": {
+            "col1":"http://img07.yiguoimg.com/d/others/180117/9288718115054641.jpg",
+            "col2":[
+                "http://img05.yiguoimg.com/d/others/171127/9288715720074107.jpg",
+                "http://img07.yiguoimg.com/e/others/170515/9288707875676847.jpg"
+            ],
+            "col3":"http://img06.yiguoimg.com/d/others/180117/9288718115087409.jpg",
+            "logo_list":[
+                "http://img06.yiguoimg.com/e/others/160613/9570169801515213.png",
+                "http://img06.yiguoimg.com/e/others/160518/9288694301040818.jpg",
+                "http://img05.yiguoimg.com/e/others/151217/9288691149414289.jpg",
+                "http://img06.yiguoimg.com/e/others/151127/9288690712092539.jpg",
+                "http://img06.yiguoimg.com/e/others/151217/9288691149479825.jpg",
+                "http://img05.yiguoimg.com/e/others/160222/9288692500406358.jpg"
+            ]
+        }
+    },
+    "floor8": {
+        "floor_id":"F8",
+        "floortit": "乳品糕点",
+        "keywords": [
+            "味全乳品",
+            "精选蛋糕",
+            "美味面包"
+        ],
+        "floor_slide": "http://img07.yiguoimg.com/d/others/170904/9288712324588324.jpg",
+        "floor_main": {
+            "col1":"http://img05.yiguoimg.com/e/others/161214/9288699442438542.jpg",
+            "col2":[
+                "http://img05.yiguoimg.com/d/others/180117/9288718115152945.jpg",
+                "http://img07.yiguoimg.com/d/others/171127/9288715719877499.jpg",
+                "http://img05.yiguoimg.com/e/others/170314/9288705202528878.jpg",
+                "http://img07.yiguoimg.com/e/others/161219/9288699556438419.jpg"
+            ],
+            "col3":"http://img06.yiguoimg.com/d/others/171121/9288715439022965.jpg",
+            "logo_list":[
+                "http://img07.yiguoimg.com/e/others/151104/9288689523662692.jpg",
+                "http://img05.yiguoimg.com/e/others/170208/9288700927287880.jpg",
+                "http://img05.yiguoimg.com/e/others/160222/9288692501618774.jpg",
+                "http://img05.yiguoimg.com/e/others/160219/9288692473241683.jpg"
+            ]
+        }
+    },
+    "floor9": {
+        "floor_id":"F9",
+        "floortit": "饮料酒水",
+        "keywords": [
+            "饮用水",
+            "果汁",
+            "白葡萄酒"
+        ],
+        "floor_slide": "http://img05.yiguoimg.com/d/others/180117/9288718115185713.jpg",
+        "floor_main": {
+            "col1":"http://img05.yiguoimg.com/e/others/170616/9288709184463568.jpg",
+            "col2":[
+                "http://img07.yiguoimg.com/e/others/170302/9288704727917154.jpg",
+                "http://img05.yiguoimg.com/e/others/170317/9288705358013041.jpg"
+            ],
+            "col3":"http://img05.yiguoimg.com/e/others/161209/9288699318608265.jpg",
+            "logo_list":[
+                "http://img07.yiguoimg.com/e/others/170221/9288701232128597.jpg",
+                "http://img05.yiguoimg.com/e/others/150927/9288685536812859.jpg",
+                "http://img05.yiguoimg.com/e/others/150927/9288685536943931.jpg",
+                "http://img06.yiguoimg.com/e/others/160621/9288695009779925.jpg"
+            ]
+        }
+    },
+    "floor10": {
+        "floor_id":"F10",
+        "floortit": "方便速食",
+        "keywords": [
+            "港式面点",
+            "湾仔码头",
+            "龙凤"
+        ],
+        "floor_slide": "http://img05.yiguoimg.com/e/others/170411/9288706367070859.jpg",
+        "floor_main": {
+            "col1":"http://img06.yiguoimg.com/d/others/171121/9288715437024117.jpg",
+            "col2":[
+                "http://img06.yiguoimg.com/d/others/171121/9288715437253493.jpg",
+                "http://img07.yiguoimg.com/e/others/160928/9288697425273148.jpg",
+                "http://img07.yiguoimg.com/d/others/171121/9288715437384565.jpg",
+                "http://img06.yiguoimg.com/e/others/161118/9288698679501170.jpg"
+            ],
+            "col3":"http://img05.yiguoimg.com/d/others/171127/9288715720139643.jpg",
+            "logo_list":[
+                "http://img05.yiguoimg.com/e/others/151008/9288686653382472.jpg",
+                "http://img07.yiguoimg.com/e/others/151023/9570164236722007.png",
+                "http://img05.yiguoimg.com/e/others/151222/9288691261546390.jpg",
+                "http://img05.yiguoimg.com/e/others/150927/9288685537206075.jpg"
+            ]
+        }
     }
 }
