@@ -16,10 +16,14 @@
     clear: both;
     visibility: hidden;
 }
-
-a:hover {
-    color: #008842;
+.btn-green-l, .btn-green-s, .btn-orange-s {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font: 18px/50px "Microsoft YaHei";
 }
+
 /*site-nav*/
 
 #site-nav {
@@ -38,6 +42,7 @@ a:hover {
             height: 4px;
             margin-left: 5px;
             background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat 0 0;
+            transition: transform 0.2s ease-in;
         }
 
         .fl {
@@ -173,6 +178,24 @@ a:hover {
                 }
             }
 
+            .current {
+                .tit {
+                    a {
+                        border-color: #b4a1c3;
+                        background: #fff;
+                        padding-bottom: 1px;
+                    }
+                }
+
+                s {
+                    transform: rotate(180deg);
+                }
+
+                .con {
+                    display: block;
+                }
+            }
+
             .pay {
                 i {
                     width: 22px;
@@ -198,57 +221,11 @@ a:hover {
     visibility: hidden;
 }
 /*header*/
-.header_fixed {
-    z-index: 100;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 46px;
-    background: url("../images/header/header_fixed_bg.png") repeat;
 
-    .wrap {
-        height: 36px;
-        padding: 5px 0;
-    }
-
-    .logo {
-        margin-right: 0;
-
-        a {
-            height: 36px;
-            height: 50px\9;
-            background-size: auto 100%;
-        }
-    }
-
-    .search {
-        width: 770px;
-        margin-top: 3px;
-
-        .search-bar {
-            float: left;
-        }
-
-        .search-keywords {
-            overflow: hidden;
-            float: left;
-            width: 230px;
-            height: 28px;
-            margin-left: 10px;
-        }
-    }
-
-    .shopping-btn {
-        width: 140px;
-        padding: 2px 0;
-        font-size: 20px;
-    }
-
-    .shopping-list {
-        top: 33px;
-    }
+.shopping-cart {
+    z-index: 88;
+    float: right;
+    position: relative;
 }
 
 header {
@@ -313,153 +290,147 @@ header {
             }
         }
 
-        .shopping-cart {
-            z-index: 88;
-            float: right;
-            position: relative;
+        .shopping-btn {
+            width: 170px;
+            height: 28px;
+            padding: 6px 0;
+            line-height: 28px;
+            text-align: center;
+            font-size: 25px;
+            border: 1px solid #008842;
+            background: #fff;
+            cursor: pointer;
 
-            .shopping-btn {
-                width: 170px;
-                height: 28px;
-                padding: 6px 0;
-                line-height: 28px;
-                text-align: center;
-                font-size: 25px;
-                border: 1px solid #008842;
-                background: #fff;
-                cursor: pointer;
+            a {
+                display: block;
+                color: #008842;
+            }
 
-                a {
+            .totleNum {
+                display: inline-block;
+                vertical-align: middle;
+                width: 28px;
+                height: 20px;
+                margin-right: 10px;
+                font-size: 12px;
+                padding: 0;
+                background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat -112px 0;
+
+                b {
                     display: block;
-                    color: #008842;
+                    width: 24px;
+                    line-height: 12px;
+                    margin-right: 4px;
+                    text-align: center;
                 }
+            }
+        }
 
-                .totleNum {
-                    display: inline-block;
-                    vertical-align: middle;
-                    width: 28px;
-                    height: 20px;
-                    margin-right: 10px;
-                    font-size: 12px;
-                    padding: 0;
-                    background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat -112px 0;
+        .shopping-list {
+            z-index: 88;
+            display: none;
+            position: absolute;
+            top: 41px;
+            right: 0;
+            width: 380px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #007f4d;
 
-                    b {
-                        display: block;
-                        width: 24px;
-                        line-height: 12px;
-                        margin-right: 4px;
-                        text-align: center;
+            .nogoods {
+                width: 380px;
+                height: 120px;
+                display: none;
+                line-height: 120px;
+                text-align: center;
+                background: url("http://static01.yiguo.com/www/images/none-bg-w190.jpg") no-repeat center #fff;
+            }
+
+            ul {
+                display: block;
+                position: relative;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width: 380px;
+                max-height: 264px;
+                margin: 10px 0 0;
+                padding: 0;
+
+                li {
+                    position: relative;
+                    overflow: hidden;
+                    zoom: 1;
+                    background: #fff;
+                    height: 45px;
+                    padding: 0 0 15px;
+                    line-height: 20px;
+
+                    .l {
+                        float: left;
+                        margin-right: 5px;
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    .c {
+                        float: left;
+                        width: 222px;
+
+                        a {
+                            display: block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    .r {
+                        float: left;
+                        text-align: right;
+                        width: 90px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
+                        b {
+                            color: #e7380d;
+                            font-weight: bold;
+                        }
+
+                        a {
+                            display: block;
+                            color: #888;
+                        }
                     }
                 }
             }
 
-            .shopping-list {
-                z-index: 88;
-                display: none;
-                position: absolute;
-                top: 41px;
-                right: 0;
-                width: 380px;
-                padding: 10px;
-                background: #fff;
-                border: 1px solid #007f4d;
+            .price-total {
+                font-size: 12px;
+                line-height: 27px;
+                margin-top: 5px;
+                padding-top: 10px;
+                text-align: right;
+                border-top: 1px solid #dcdcdc;
 
-                .nogoods {
-                    width: 380px;
-                    height: 120px;
-                    display: none;
-                    line-height: 120px;
-                    text-align: center;
-                    background: url("http://static01.yiguo.com/www/images/none-bg-w190.jpg") no-repeat center #fff;
+                span {
+                    margin-left: 15px;
                 }
 
-                ul {
-                    display: block;
-                    position: relative;
-                    overflow-x: hidden;
-                    overflow-y: auto;
-                    width: 380px;
-                    max-height: 264px;
-                    margin: 10px 0 0;
-                    padding: 0;
-
-                    li {
-                        position: relative;
-                        overflow: hidden;
-                        zoom: 1;
-                        background: #fff;
-                        height: 45px;
-                        padding: 0 0 15px;
-                        line-height: 20px;
-
-                        .l {
-                            float: left;
-                            margin-right: 5px;
-                            width: 45px;
-                            height: 45px;
-                        }
-
-                        .c {
-                            float: left;
-                            width: 222px;
-
-                            a {
-                                display: block;
-                                overflow: hidden;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                            }
-                        }
-
-                        .r {
-                            float: left;
-                            text-align: right;
-                            width: 90px;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-
-                            b {
-                                color: #e7380d;
-                                font-weight: bold;
-                            }
-
-                            a {
-                                display: block;
-                                color: #888;
-                            }
-                        }
-                    }
+                b {
+                    color: #e7380d;
+                    font-size: 16px;
+                    margin: 0 5px;
                 }
 
-                .price-total {
+                .settleup {
+                    display: inline-block;
+                    width: 75px;
+                    height: 27px;
                     font-size: 12px;
-                    line-height: 27px;
-                    margin-top: 5px;
-                    padding-top: 10px;
-                    text-align: right;
-                    border-top: 1px solid #dcdcdc;
-
-                    span {
-                        margin-left: 15px;
-                    }
-
-                    b {
-                        color: #e7380d;
-                        font-size: 16px;
-                        margin: 0 5px;
-                    }
-
-                    .settleup {
-                        display: inline-block;
-                        width: 75px;
-                        height: 27px;
-                        font-size: 12px;
-                        text-align: center;
-                        color: #fff;
-                        background: #008842;
-                    }
+                    text-align: center;
+                    color: #fff;
+                    background: #008842;
                 }
             }
         }
@@ -755,5 +726,18 @@ header {
 
     .service {
         background-position: 0 -46px;
+
+        &:hover {
+            background-position: -55px -46px;
+        }
+    }
+
+    .goTop {
+        display: none;
+        background-position: 0 0;
+
+        &:hover {
+            background-position: -55px 0;
+        }
     }
 }

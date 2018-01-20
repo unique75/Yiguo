@@ -8,6 +8,10 @@ requirejs.config({
         'load-floor': '../module/load-floor',
         'load-floor2': '../module/load-floor2',
         'load-floor3': '../module/load-floor3',
-        'floor-guide': '../module/floor-guide'
+        'floor-guide': '../module/floor-guide',
+        'go-top': '../module/go-top',
+        'header-fixed': '../module/header-fixed',
+        'shopcart-show': '../module/shopcart-show',
+        'site-nav': '../module/site-nav'
     }
 })
