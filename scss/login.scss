@@ -1,0 +1,167 @@
+@import "reset.scss";
+@import "common.scss"; /*header*/
+
+.header {
+    border: none;
+    background: #e0e0e0;
+
+    .wrap {
+        padding: 15px 0 5px;
+
+        .logo {
+            position: relative;
+
+            a {
+                width: 195px;
+                height: 50px;
+                background: url("https://login.yiguo.com/Content/img/themes/logo.png") no-repeat;
+            }
+
+            .h-tit {
+                color: #008842;
+                left: 240px;
+                font: 28px/1 Microsoft YaHei;
+                position: absolute;
+                top: 6px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+/*form内容*/
+
+.login {
+    margin: 0;
+    border: none;
+    background-color: #fff;
+    padding-top: 30px;
+
+    .fl {
+        float: left;
+
+        img {
+            margin-top: 20px;
+        }
+    }
+
+    .fr {
+        padding-right: 105px;
+        float: right;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font: 12px Arial, "SimSun";
+        color: #878787;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .login-main {
+        width: 308px;
+        padding: 30px 20px 20px;
+        background-color: #fff;
+        border: 1px solid #e3e6e0;
+
+        p {
+            width: 100%;
+
+            strong {
+                color: #262626;
+                font: 18px/1 "Microsoft YaHei";
+            }
+
+            span {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        .green{
+            text-decoration: underline;
+            color: #008842;
+        }
+    }
+
+    .input {
+        padding-left: 50px;
+        width: 254px;
+        background-image: url("https://login.yiguo.com/Content/img/bg_input.png");
+        background-repeat: no-repeat;
+        border: 1px solid #c1c1c1;
+        background-color: #fff;
+        height: 38px;
+        vertical-align: middle;
+        font: 14px/38px "Microsoft YaHei";
+    }
+
+    .input-key-icon,
+    .input-phone-icon {
+        left: 1px;
+        top: 1px !important;
+        width: 40px;
+        height: 38px;
+        background-image: url("https://login.yiguo.com/Content/img/bg_input.png");
+        background-repeat: no-repeat;
+    }
+
+    .input-phone-icon {
+        background-position: 0 -120px;
+    }
+
+    .input-key-icon {
+        background-position: 0 -180px;
+    }
+
+    .input-key {
+        background-position: 0 -180px;
+    }
+
+    input[type=checkbox] {
+        margin-right: 9px;
+        height: 14px;
+        width: 14px;
+        vertical-align: -1px;
+    }
+
+    .gray {
+        color: #878787;
+    }
+
+    .btn-green-l,
+    .btn-green-s {
+        background: #008842;
+    }
+
+    .btn-green-l {
+        width: 306px;
+    }
+
+    i {
+        background-image: url("https://login.yiguo.com/Content/img/themes/bg_login.png");
+        display: inline-block;
+        width: 88px;
+        height: 20px;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+
+    .qq i {
+        background-position: -60px -200px;
+    }
+
+    .sina i {
+        background-position: -160px -200px;
+    }
+
+    .ay i {
+        background-position: -260px -200px;
+        width: 57px;
+        margin-right: 0;
+    }
+}
