@@ -66,6 +66,9 @@
     p {
         margin-bottom: 29px;
         font: 14px Arial,"Microsoft YaHei";
+        .span{
+            display: none;
+        }
     }
 
     .field-name {
@@ -135,5 +138,35 @@
     .btn-green-l {
         width: 306px;
         background: #008842;
+    }
+
+    i {
+        background-image: url("https://login.yiguo.com/Content/img/themes/bg_login.png");
+    }
+
+    .pass-error i,
+    .pass-succ i,
+    .pass-tip i {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        vertical-align: middle;
+        margin-right: 9px;
+    }
+
+    .pass-succ i {
+        background-position: 0 -200px;
+    }
+
+    .pass-tip i {
+        background-position: -20px -200px;
+    }
+
+    .pass-error {
+        color: #f60000;
+
+        i {
+            background-position: -40px -200px;
+        }
     }
 }

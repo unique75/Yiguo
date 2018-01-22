@@ -1,6 +1,6 @@
 @import "reset.scss";
-@import "common.scss"; /*header*/
-
+@import "common.scss";
+/*header*/
 .header {
     border: none;
     background: #e0e0e0;
@@ -29,7 +29,6 @@
     }
 }
 /*form内容*/
-
 .login {
     margin: 0;
     border: none;
@@ -81,7 +80,8 @@
                 top: 0;
             }
         }
-        .green{
+
+        .green {
             text-decoration: underline;
             color: #008842;
         }
@@ -163,5 +163,15 @@
         background-position: -260px -200px;
         width: 57px;
         margin-right: 0;
+    }
+
+    .msg-error {
+        position: relative;
+        background: #FFEBEB none repeat scroll 0 0;
+        border: 1px solid #E4393C;
+        padding: 3px 10px 3px 40px;
+        line-height: 18px;
+        min-height: 18px;
+        color: #E4393C;
     }
 }

@@ -621,6 +621,8 @@ header {
   .register p {
     margin-bottom: 29px;
     font: 14px Arial,"Microsoft YaHei"; }
+    .register p .span {
+      display: none; }
   .register .field-name {
     display: inline-block;
     width: 220px;
@@ -668,3 +670,21 @@ header {
   .register .btn-green-l {
     width: 306px;
     background: #008842; }
+  .register i {
+    background-image: url("https://login.yiguo.com/Content/img/themes/bg_login.png"); }
+  .register .pass-error i,
+  .register .pass-succ i,
+  .register .pass-tip i {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 9px; }
+  .register .pass-succ i {
+    background-position: 0 -200px; }
+  .register .pass-tip i {
+    background-position: -20px -200px; }
+  .register .pass-error {
+    color: #f60000; }
+    .register .pass-error i {
+      background-position: -40px -200px; }

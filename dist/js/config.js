@@ -12,6 +12,7 @@ requirejs.config({
         'go-top': '../module/go-top',
         'header-fixed': '../module/header-fixed',
         'shopcart-show': '../module/shopcart-show',
-        'site-nav': '../module/site-nav'
+        'site-nav': '../module/site-nav',
+        'jq-cookie': '../plugin/jquery.cookie'
     }
 })

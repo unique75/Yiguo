@@ -685,3 +685,11 @@ header {
     background-position: -260px -200px;
     width: 57px;
     margin-right: 0; }
+  .login .msg-error {
+    position: relative;
+    background: #FFEBEB none repeat scroll 0 0;
+    border: 1px solid #E4393C;
+    padding: 3px 10px 3px 40px;
+    line-height: 18px;
+    min-height: 18px;
+    color: #E4393C; }
