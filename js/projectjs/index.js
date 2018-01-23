@@ -68,7 +68,7 @@ require(['../config'], function() {
                     new loadFloor2().init('floor10', $('.ten-floor'));
                     //楼梯
                     floorGuide.init();
-                    $('.footer').load('./common-footer.html')
+                    $('.footer').load('./common-footer.html');
                 })()
 
                 //轮播

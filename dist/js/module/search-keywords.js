@@ -12,9 +12,7 @@ define(['jquery', 'template'], function ($, tem) {
             $.ajax(setup).then(this.rendering_page);
         }
         rendering_page(res) {
-            // console.log(res);
             for (var i in res) {
-
                 var str = template('searkeywords', res.KeyWords);
                 $('.search-keywords').html(str);
             }

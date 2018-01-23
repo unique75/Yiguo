@@ -150,11 +150,25 @@ require(['../config'], function() {
                             _this.verification_agree()
                         ) {
                             location.href = './login.html';
-                            var user = [{
+                            var userArr = '';
+                            var user = {
                                 'username': $('#Phone_Mobile').val(),
                                 'userpwd': $('#Phone_Password').val()
-                            }]
-                            localStorage.setItem('userInfo', JSON.stringify(user));
+                            }
+                            var data = localStorage.getItem('userInfo');
+                            if (data) {//如果localStorage中存在userInfo数据再进入
+                                userArr = JSON.parse(data);//把字符串转成对象
+                                for (var i in userArr) {//遍历这个数组
+                                    if (user.username == userArr[i].username) {//如果要存的用户名和数据中已有的数据相同就不存
+                                        return;
+                                    } else {
+                                        userArr.push(user);//如果用户名不相同就往数组中追加新的用户名和密码
+                                    }
+                                }
+                            } else {
+                                userArr = [user];//如果localstorage中不存在用户数据，就从输入框中获取用户名和密码
+                            }
+                            localStorage.setItem('userInfo', JSON.stringify(userArr));//把数组转成字符串存入localstorage中
                         }
                     })
                 }

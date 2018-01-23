@@ -5,7 +5,24 @@ define(['jquery', 'template'], function ($, tem) {
         }
         init(strele) {
             this.strele = strele;
-            // console.log(ele);
+            //判断url地址中有没有index字符，匹配不到会返回-1，也就代表不是主页，不是主页就让goodspanel为隐藏，鼠标移入再显示
+            var state = location.href.search(/index/);
+            if(state != -1){
+                $(".catalogs-list").show();
+            } else {
+                $(".catalogs-list").hide();
+                $(".catalogs-title").on('mouseenter', function () {
+                    $(".catalogs-list").show();
+                })
+            }
+            $(".catalogs").on('mouseleave', function () {
+                if(state == -1){
+                    $(".catalogs-list").hide();
+                }
+            })
+            this.ajax_fn();
+        }
+        ajax_fn() {
             var setup = {
                 url: '/yiguo',
                 type: 'GET',
@@ -14,7 +31,6 @@ define(['jquery', 'template'], function ($, tem) {
             $.ajax(setup).then(this.rendering_page);
         }
         rendering_page(res) {
-            // console.log(res);
             for (var i in res) {
                 var str = template('goodspanel',res.Catrgories)
                 $('.catalogs-list').html(str);

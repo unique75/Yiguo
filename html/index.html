@@ -45,14 +45,14 @@
                             <a rel="nofollow" href="javascript:;">我的退换货</a>
                             <a rel="nofollow" href="javascript:;">预存款查询</a>
                             <a rel="nofollow" href="javascript:;">立即充值</a>
-                            <a rel="nofollow" href="javascript:;" class="logout" style="display:none;">退出</a>
+
                         </div>
                     </li>
                     <li id="_logout" style="display:none"><a href="javascript:;" class="logout">[退出]</a></li>
                     <li id="_loginname" style="display:none"><a rel="nofollow" href="javascript:;"></a></li>
-                    <li id="_register"><a rel="nofollow" href="javascript:;">[注册]</a></li>
+                    <li id="_register"><a rel="nofollow" href="./register.html">[注册]</a></li>
                     <li id="_login">
-                        <a rel="nofollow" href="javascript:;">[登录]</a>
+                        <a rel="nofollow" href="./login.html">[登录]</a>
                     </li>
                 </ul>
             </div>
@@ -100,8 +100,8 @@
                 <div class="catalogs">
 
                     <div class="catalogs-title"><a href="javascript:;">全部商品分类▼</a></div>
-                    <div class="catalogs-list block">
-
+                    <div class="catalogs-list">
+                        <!-- ajax加载 -->
                     </div>
                 </div>
                 <!--商品分类 结束-->
@@ -325,7 +325,7 @@
         <div class="floor-main">
             <ul>
                 <% for(var i in data.floor_main) { %>
-                    <li><a href="javascript:;" target="_blank"><img src="<%= data.floor_main[i] %>" width="230" height="230"></a></li>
+                    <li><a href="./desc.html?id=<%= data.floor_main[i].goods_id %>" target="_blank"><img src="<%= data.floor_main[i].img %>" width="230" height="230"></a></li>
                     <% } %>
             </ul>
         </div>

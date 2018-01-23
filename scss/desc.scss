@@ -1,0 +1,725 @@
+@import "reset.scss";
+@import "common.scss";
+
+a:hover {
+    color: #008842;
+}
+/*nav-items*/
+.nav-items {
+    overflow: hidden;
+    float: left;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+
+    ul li {
+        float: left;
+        width: 115px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+/*中间部分*/
+.wrap {
+    .crumbs {
+        margin: 10px 0 10px -10px;
+
+        a {
+            margin: 0 10px;
+        }
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .pic-preview {
+        position: relative;
+        float: left;
+        width: 500px;
+        height: 600px;
+
+        .pic-big {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .pic-thumb {
+            z-index: 1;
+            overflow: hidden;
+            position: relative;
+
+            .picList {
+                padding-top: 10px;
+                width: 500px;
+
+                ul {
+                    zoom: 1;
+                    margin-left: -16px;
+
+                    li {
+                        float: left;
+                        overflow: hidden;
+                        height: 85px;
+                        width: 85px;
+                        border: 1px solid #bcbcbc;
+                        margin-left: 16px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .icon {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    }
+
+    .product-info {
+        width: 680px;
+        margin-left: 520px;
+
+        .summary-name {
+            margin: 0 85px 20px 0;
+
+            h1 {
+                font: normal 26px "Microsoft YaHei";
+            }
+
+            p {
+                height: 40px;
+                margin-top: 5px;
+                color: #777;
+                font: normal 16px/20px "Microsoft YaHei";
+            }
+        }
+
+        .summary-price {
+            height: 70px;
+            padding: 10px 20px;
+            background: #fff;
+
+            .pro-price {
+                float: left;
+                height: 70px;
+
+                span {
+                    display: inline-block;
+                    padding-left: 5px;
+
+                    em {
+                        padding: 0 5px;
+                        font-size: 18px;
+                        color: #ff0000;
+                        font-style: normal;
+                    }
+
+                    strong {
+                        color: #ff0000;
+                        font-size: 35px;
+                        font-weight: normal;
+                    }
+                }
+            }
+
+            .pro-review {
+                float: right;
+                text-align: center;
+
+                p {
+                    line-height: 22px;
+                    color: #999;
+
+                    b {
+                        color: #e8380d;
+                        font-size: 18px;
+                        font-weight: normal;
+                        vertical-align: middle;
+                    }
+
+                    a {
+                        color: #999;
+
+                        span {
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .summary-other {
+            margin-top: 20px;
+
+            .left {
+                float: left;
+                width: 529px;
+                padding-right: 20px;
+                border-right: 1px solid #d9d9d9;
+
+                .choose,
+                .pro-amount,
+                .pro-service,
+                .pro-share,
+                .pro-tips {
+                    margin-bottom: 20px;
+                }
+
+                .dt {
+                    float: left;
+                    width: 40px;
+                    padding: 0 10px;
+                }
+
+                .dd {
+                    float: left;
+                    width: 468px;
+                }
+
+                .choose {
+                    .dt {
+                        line-height: 52px;
+                    }
+
+                    li {
+                        float: left;
+                        position: relative;
+                        margin: 5px 10px 5px 0;
+
+                        a {
+                            float: left;
+                            width: auto;
+                            background-color: #fff;
+                            white-space: nowrap;
+                            text-align: center;
+                            border: 1px solid #e2e2e2;
+                            border-bottom: none;
+                            text-decoration: none;
+
+                            span {
+                                display: block;
+                                padding: 5px 12px 5px 9px;
+                                border-bottom: 1px solid #e2e2e2;
+                            }
+
+                            i {
+                                z-index: 1;
+                                display: none;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                width: 16px;
+                                height: 16px;
+                                overflow: hidden;
+                                text-indent: -99em;
+                                background: url("http://static01.yiguo.com/www/images/product.png") no-repeat 0 0;
+                            }
+                        }
+                    }
+
+                    li a:hover,
+                    li a:hover span,
+                    li.selected a,
+                    li.selected span {
+                        border-color: #008842;
+                    }
+                }
+
+                .pro-service {
+                    padding-left: 10px;
+                    color: #999;
+
+                    b {
+                        color: #008842;
+                        font-weight: bold;
+                    }
+
+                    .mr5 {
+                        margin-right: 5px;
+                    }
+                }
+                //商品数量加减
+                .pro-amount {
+                    .dt {
+                        line-height: 43px;
+                    }
+
+                    .spinner {
+                        width: 76px;
+                        position: relative;
+                        overflow: hidden;
+                        float: left;
+
+                        button {
+                            display: block;
+                            width: 18px;
+                            height: 20px;
+                            line-height: 20px;
+                            text-align: center;
+                            float: right;
+                            outline: none;
+                            position: relative;
+                            border: 1px solid #e2e2e2;
+                            background-color: white;
+                            cursor: pointer;
+                        }
+
+                        input {
+                            width: 39px;
+                            height: 39px;
+                            line-height: 41px;
+                            font-size: 16px;
+                            text-align: center;
+                            border: none;
+                            -webkit-appearance: none;
+                            border: 1px solid #e2e2e2;
+                            border-right: none;
+                        }
+
+                        .increase {
+                            border-bottom: 1px solid #e2e2e2;
+                            height: 21px;
+                        }
+
+                        .decrease {
+                            top: 21px;
+                            right: 18px;
+                            border-top: none;
+                        }
+                    }
+
+                    .addcart {
+                        float: left;
+                        width: 187px;
+                        height: 43px;
+                        margin-left: 10px;
+
+                        a {
+                            display: block;
+                            width: 187px;
+                            height: 25px;
+                            padding: 9px 0;
+                            text-align: center;
+                            font: normal 18px/25px "Microsoft YaHei";
+                            border-radius: 3px;
+                            color: #fff;
+                            background: #008842;
+
+                            i {
+                                width: 28px;
+                                height: 25px;
+                                margin-right: 10px;
+                                vertical-align: bottom;
+                                background: url("http://static01.yiguo.com/www/images/product.png") no-repeat -47px 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                float: right;
+                width: 120px;
+                padding-left: 10px;
+                color: #777;
+
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+
+                    th {
+                        padding: 5px 0;
+                        width: 65px;
+                        font-weight: normal;
+                        text-align: left;
+                    }
+
+                    td {
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    /*左侧*/
+    .left-con {
+        float: left;
+        overflow: hidden;
+        width: 255px;
+        margin-right: 15px;
+
+        .box {
+            position: relative;
+            margin-bottom: 20px;
+            border: 1px solid #cde4c0;
+            background: #fff;
+
+            .hd {
+                height: 30px;
+                padding: 0 10px;
+                line-height: 30px;
+                font-size: 12px;
+                font-weight: bold;
+                color: #fff;
+                background: #008842;
+            }
+
+            .bd {
+                padding: 0 10px;
+
+                .p {
+                    clear: both;
+                    position: relative;
+                    height: 70px;
+                    padding: 10px 0;
+                    border-bottom: 1px dashed #cdcdcd;
+
+                    &:hover .add {
+                        display: inline;
+                    }
+
+                    .add {
+                        display: none;
+                        z-index: 1;
+                        position: absolute;
+                        right: 0;
+                        bottom: 10px;
+                        font-size: 12px;
+                        color: #fff;
+                        padding: 3px 8px;
+                        background: #008842;
+                        border-radius: 3px;
+                        cursor: pointer;
+                    }
+
+                    .img {
+                        position: relative;
+                        float: left;
+                        width: 68px;
+                        height: 68px;
+                        border: 1px solid #dfdfdf;
+                    }
+
+                    .txt {
+                        float: left;
+                        width: 153px;
+                        margin-left: 10px;
+                        padding: 4px 0;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    /*右侧*/
+    .main-con {
+        float: right;
+        width: 930px;
+        /*当季热卖*/
+        .hot-sale {
+            margin-bottom: 25px;
+            border: 1px solid #d4d4d4;
+            background: #fff;
+
+            .hd {
+                padding: 0 25px;
+                line-height: 35px;
+                color: #008842;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            li {
+                float: left;
+                width: 135px;
+                padding: 10px 25px 25px;
+                text-align: center;
+
+                .p-img {
+                    margin-bottom: 10px;
+                }
+
+                .p-name {
+                    overflow: hidden;
+                    height: 36px;
+                    line-height: 18px;
+                    margin-bottom: 7px;
+                }
+
+                .p-price {
+                    strong {
+                        color: #e8380d;
+                        padding-right: 15px;
+                    }
+
+                    del {
+                        color: #aaa;
+                    }
+                }
+            }
+        }
+        /*商品详情*/
+        .product-detail {
+            .detail-tab {
+                position: relative;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #d4d4d4;
+                background: #fff;
+
+                .detail-ul li.active {
+                    border-bottom: 2px solid #fff;
+                    background: url("http://static01.yiguo.com/www/images/product.png") no-repeat -33px -58px #fff;
+                }
+
+                .detail-ul li {
+                    position: relative;
+                    display: block;
+                    float: left;
+                    width: 130px;
+                    margin-top: -1px;
+                    text-align: center;
+                    border-right: 1px solid #d4d4d4;
+
+                    a {
+                        display: block;
+                        height: 36px;
+                        padding-top: 4px;
+                        line-height: 36px;
+                        font-size: 12px;
+
+                        b {
+                            font-weight: normal;
+                            color: #e8380d;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+
+                .addcart {
+                    display: none;
+                    position: absolute;
+                    right: 145px;
+                    top: 5px;
+                    width: 85px;
+                    height: 25px;
+
+                    a {
+                        display: block;
+                        text-align: center;
+                        width: 85px;
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0;
+                        font: normal 12px/30px "\5b8b\4f53";
+                        border-radius: 0;
+                    }
+                }
+            }
+            /*商品详情主题部分*/
+            .detail-content {
+                .details {
+                    width: 880px;
+                    padding: 24px;
+                }
+
+                .detail-item {
+                    margin-top: -1px;
+                    margin-bottom: 20px;
+                    border: 1px solid #d4d4d4;
+                    background: #fff;
+                }
+
+                .detail-table {
+                    width: 100%;
+                    margin: 0 0 20px;
+                    border: 1px solid #e1efd8;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+
+                    th {
+                        background: #ebf8f2;
+                        font-weight: bold;
+                        padding: 7px;
+                        width: 180px;
+                        padding-left: 20px;
+                        text-align: left;
+                    }
+
+                    td,
+                    th {
+                        color: #666;
+                        border: 1px solid #e1efd8;
+                        border-width: 1px 0;
+                    }
+                }
+
+                #comment {
+                    display: block;
+                }
+
+                .comment-info {
+                    height: 90px;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #d4d4d4;
+
+                    .score {
+                        float: left;
+                        width: 200px;
+                        text-align: center;
+                        border-right: 1px dashed #d4d4d4;
+
+                        b {
+                            font-size: 36px;
+                            color: #008842;
+                            display: block;
+                            text-align: center;
+                            padding: 10px 0;
+
+                            span {
+                                font-size: 12px;
+                                font-weight: normal;
+                                vertical-align: initial;
+                                color: #666;
+                            }
+
+                            strong {
+                                color: #008842;
+                            }
+                        }
+                    }
+
+                    .percent {
+                        float: left;
+                        padding: 12px 110px 2px;
+                        border-right: 1px dashed #d4d4d4;
+
+                        .slip {
+                            float: left;
+                            margin-left: 10px;
+
+                            li {
+                                width: 140px;
+                                height: 10px;
+                                background: #e4e4e4;
+                                margin-bottom: 15px;
+                                position: relative;
+
+                                b {
+                                    width: 35px;
+                                    position: absolute;
+                                    left: -35px;
+                                    top: 0;
+                                    font-weight: normal;
+                                }
+
+                                span {
+                                    height: 10px;
+                                    display: block;
+                                    background: #008842;
+                                    width: 0;
+                                }
+
+                                i {
+                                    width: 35px;
+                                    position: absolute;
+                                    left: 150px;
+                                    top: 0;
+                                    font: normal 12px/10px Arial;
+                                }
+                            }
+                        }
+                    }
+
+                    .comment-btn {
+                        float: left;
+                        width: 280px;
+                        padding: 8px 0 8px 75px;
+
+                        .btn-gn {
+                            display: block;
+                            width: 100px;
+                            height: 26px;
+                            margin: 10px 0;
+                            line-height: 26px;
+                            color: #fff;
+                            text-align: center;
+                            cursor: pointer;
+                            border-radius: 3px;
+                            background: #008842;
+                        }
+
+                        p {
+                            color: #777;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .comment-list {
+                        padding: 20px;
+
+                        .comment-tab-wrap {
+                            position: relative;
+                            border-bottom: 1px solid #ebebeb;
+
+                            .comment-tab {
+                                float: left;
+                                border-bottom: 0;
+                                position: relative;
+                                height: 32px;
+                            }
+
+                            .extra {
+                                float: right;
+                                line-height: 32px;
+
+                                span {
+                                    margin-left: 10px;
+
+                                    select {
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        .comment-item {
+                            padding: 15px 0;
+
+                            .user {
+                                font-size: 12px;
+                                width: 66px;
+                                float: left;
+                                padding: 0 30px 0 20px;
+                                text-align: center;
+
+                                .name {
+                                    margin-top: 5px;
+                                }
+
+                                span {
+                                    display: block;
+                                    line-height: 18px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .content-comment {
+                                overflow: inherit;
+                                float: left;
+                                width: 772px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

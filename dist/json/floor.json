@@ -8,13 +8,30 @@
             "泰国鲜果"
         ],
         "floor_slide": "http://img06.yiguoimg.com/e/others/170217/9288701136937553.jpg",
-        "floor_main": [
-            "http://img06.yiguoimg.com/d/others/180108/9288717661578280.jpg",
-            "http://img05.yiguoimg.com/d/others/180108/9288717661840424.jpg",
-            "http://img07.yiguoimg.com/d/others/171102/9288714534265698.jpg",
-            "http://img07.yiguoimg.com/d/others/171205/9288716094317445.jpg",
-            "http://img07.yiguoimg.com/d/others/180108/9288717661971496.jpg",
-            "http://img05.yiguoimg.com/d/others/171206/9288716106802054.jpg"
+        "floor_main": [{
+                "goods_id": "floor1_01",
+                "img": "http://img06.yiguoimg.com/d/others/180108/9288717661578280.jpg"
+            },
+            {
+                "goods_id": "floor1_02",
+                "img": "http://img05.yiguoimg.com/d/others/180108/9288717661840424.jpg"
+            },
+            {
+                "goods_id": "floor1_03",
+                "img": "http://img07.yiguoimg.com/d/others/171102/9288714534265698.jpg"
+            },
+            {
+                "goods_id": "floor1_04",
+                "img": "http://img07.yiguoimg.com/d/others/171205/9288716094317445.jpg"
+            },
+            {
+                "goods_id": "floor1_05",
+                "img": "http://img07.yiguoimg.com/d/others/180108/9288717661971496.jpg"
+            },
+            {
+                "goods_id": "floor1_06",
+                "img": "http://img05.yiguoimg.com/d/others/171206/9288716106802054.jpg"
+            }
         ]
     },
     "floor2": {
@@ -26,17 +43,34 @@
             "精选苹果"
         ],
         "floor_slide": "http://img06.yiguoimg.com/d/others/171128/9288715745272700.jpg",
-        "floor_main": [
-            "http://img05.yiguoimg.com/d/others/171205/9288716093563781.jpg",
-            "http://img06.yiguoimg.com/d/others/171130/9288715865039742.jpg",
-            "http://img06.yiguoimg.com/e/others/170210/9288700985745994.jpg",
-            "http://img05.yiguoimg.com/d/others/171205/9288716094022533.jpg",
-            "http://img05.yiguoimg.com/d/others/171117/9288715236942705.jpg",
-            "http://img05.yiguoimg.com/d/others/171128/9288715777254268.jpg"
+        "floor_main": [{
+                "goods_id": "floor2_01",
+                "img": "http://img05.yiguoimg.com/d/others/171205/9288716093563781.jpg"
+            },
+            {
+                "goods_id": "floor2_02",
+                "img": "http://img06.yiguoimg.com/d/others/171130/9288715865039742.jpg"
+            },
+            {
+                "goods_id": "floor2_03",
+                "img": "http://img06.yiguoimg.com/e/others/170210/9288700985745994.jpg"
+            },
+            {
+                "goods_id": "floor2_04",
+                "img": "http://img05.yiguoimg.com/d/others/171205/9288716094022533.jpg"
+            },
+            {
+                "goods_id": "floor2_05",
+                "img": "http://img05.yiguoimg.com/d/others/171117/9288715236942705.jpg"
+            },
+            {
+                "goods_id": "floor2_06",
+                "img": "http://img05.yiguoimg.com/d/others/171128/9288715777254268.jpg"
+            }
         ]
     },
     "floor3": {
-        "floor_id":"F3",
+        "floor_id": "F3",
         "floortit": "新鲜蔬菜",
         "keywords": [
             "即食色拉",
@@ -44,17 +78,34 @@
             "健康有机"
         ],
         "floor_slide": "http://img05.yiguoimg.com/e/others/161125/9288698866639225.jpg",
-        "floor_main": [
-            "http://img06.yiguoimg.com/e/others/170508/9288707491766952.jpg",
-            "http://img06.yiguoimg.com/e/others/170621/9288709365834453.jpg",
-            "http://img06.yiguoimg.com/e/others/161103/9288698271998307.jpg",
-            "http://img07.yiguoimg.com/d/others/180111/9288717836657707.jpg",
-            "http://img06.yiguoimg.com/d/others/180104/9288717475554340.jpg",
-            "http://img06.yiguoimg.com/d/others/180104/9288717476766756.jpg"
+        "floor_main": [{
+                "goods_id": "floor3_01",
+                "img": "http://img06.yiguoimg.com/e/others/170508/9288707491766952.jpg"
+            },
+            {
+                "goods_id": "floor3_02",
+                "img": "http://img06.yiguoimg.com/e/others/170621/9288709365834453.jpg"
+            },
+            {
+                "goods_id": "floor3_03",
+                "img": "http://img06.yiguoimg.com/e/others/161103/9288698271998307.jpg"
+            },
+            {
+                "goods_id": "floor3_04",
+                "img": "http://img07.yiguoimg.com/d/others/180111/9288717836657707.jpg"
+            },
+            {
+                "goods_id": "floor3_05",
+                "img": "http://img06.yiguoimg.com/d/others/180104/9288717475554340.jpg"
+            },
+            {
+                "goods_id": "floor3_06",
+                "img": "http://img06.yiguoimg.com/d/others/180104/9288717476766756.jpg"
+            }
         ]
     },
     "floor4": {
-        "floor_id":"F4",
+        "floor_id": "F4",
         "floortit": "海鲜水产",
         "keywords": [
             "刺身专区",
@@ -62,17 +113,34 @@
             "海产干货"
         ],
         "floor_slide": "http://img06.yiguoimg.com/d/others/171102/9288714534036322.jpg",
-        "floor_main": [
-            "http://img06.yiguoimg.com/e/others/170809/9288711286039305.jpg",
-            "http://img06.yiguoimg.com/e/others/161130/9288699026514302.jpg",
-            "http://img07.yiguoimg.com/e/others/170527/9288708394394299.jpg",
-            "http://img06.yiguoimg.com/d/others/180103/9288717445506083.jpg",
-            "http://img07.yiguoimg.com/e/others/161208/9288699281514888.jpg",
-            "http://img05.yiguoimg.com/d/others/170822/9288711929537302.jpg"
+        "floor_main": [{
+                "goods_id": "floor4_01",
+                "img": "http://img06.yiguoimg.com/e/others/170809/9288711286039305.jpg"
+            },
+            {
+                "goods_id": "floor4_02",
+                "img": "http://img06.yiguoimg.com/e/others/161130/9288699026514302.jpg"
+            },
+            {
+                "goods_id": "floor4_03",
+                "img": "http://img07.yiguoimg.com/e/others/170527/9288708394394299.jpg"
+            },
+            {
+                "goods_id": "floor4_03",
+                "img": "http://img06.yiguoimg.com/d/others/180103/9288717445506083.jpg"
+            },
+            {
+                "goods_id": "floor4_05",
+                "img": "http://img07.yiguoimg.com/e/others/161208/9288699281514888.jpg"
+            },
+            {
+                "goods_id": "floor4_06",
+                "img": "http://img05.yiguoimg.com/d/others/170822/9288711929537302.jpg"
+            }
         ]
     },
     "floor5": {
-        "floor_id":"F5",
+        "floor_id": "F5",
         "floortit": "精选肉类",
         "keywords": [
             "欧洲天然猪",
@@ -81,15 +149,15 @@
         ],
         "floor_slide": "http://img07.yiguoimg.com/d/others/170906/9288712415519526.jpg",
         "floor_main": {
-            "col1":"http://img05.yiguoimg.com/e/others/170504/9288707378258596.jpg",
-            "col2":[
+            "col1": "http://img05.yiguoimg.com/e/others/170504/9288707378258596.jpg",
+            "col2": [
                 "http://img07.yiguoimg.com/d/others/170906/9288712415650598.jpg",
                 "http://img05.yiguoimg.com/e/others/170105/9288700023808549.jpg",
                 "http://img05.yiguoimg.com/d/others/170906/9288712415585062.jpg",
                 "http://img06.yiguoimg.com/e/others/161207/9288699249566087.jpg"
             ],
-            "col3":"http://img05.yiguoimg.com/e/others/170502/9288707279823522.jpg",
-            "logo_list":[
+            "col3": "http://img05.yiguoimg.com/e/others/170502/9288707279823522.jpg",
+            "logo_list": [
                 "http://img05.yiguoimg.com/e/others/160420/9288693612060820.jpg",
                 "http://img05.yiguoimg.com/e/others/150929/9288685776248637.jpg",
                 "http://img07.yiguoimg.com/e/others/160329/9288693154226301.jpg",
@@ -98,7 +166,7 @@
         }
     },
     "floor6": {
-        "floor_id":"F6",
+        "floor_id": "F6",
         "floortit": "禽类蛋品",
         "keywords": [
             "原味蒸品",
@@ -107,15 +175,15 @@
         ],
         "floor_slide": "http://img07.yiguoimg.com/e/others/170401/9288706104468097.jpg",
         "floor_main": {
-            "col1":"http://img05.yiguoimg.com/d/others/170904/9288712344314660.jpg",
-            "col2":[
+            "col1": "http://img05.yiguoimg.com/d/others/170904/9288712344314660.jpg",
+            "col2": [
                 "http://img07.yiguoimg.com/e/others/170505/9288707404604069.jpg",
                 "http://img05.yiguoimg.com/d/others/170904/9288712344281892.jpg",
                 "http://img05.yiguoimg.com/d/others/170904/9288712336188196.jpg",
                 "http://img07.yiguoimg.com/d/others/170904/9288712344249124.jpg"
             ],
-            "col3":"http://img06.yiguoimg.com/d/others/170906/9288712415748902.jpg",
-            "logo_list":[
+            "col3": "http://img06.yiguoimg.com/d/others/170906/9288712415748902.jpg",
+            "logo_list": [
                 "http://img05.yiguoimg.com/e/others/150927/9288685535567675.jpg",
                 "http://img05.yiguoimg.com/e/others/150927/9288685535436603.jpg",
                 "http://img07.yiguoimg.com/e/others/151106/9288689588215654.jpg",
@@ -124,7 +192,7 @@
         }
     },
     "floor7": {
-        "floor_id":"F7",
+        "floor_id": "F7",
         "floortit": "粮油杂货",
         "keywords": [
             "休闲零食",
@@ -133,13 +201,13 @@
         ],
         "floor_slide": "http://img07.yiguoimg.com/e/others/170317/9288705349755505.jpg",
         "floor_main": {
-            "col1":"http://img07.yiguoimg.com/d/others/180117/9288718115054641.jpg",
-            "col2":[
+            "col1": "http://img07.yiguoimg.com/d/others/180117/9288718115054641.jpg",
+            "col2": [
                 "http://img05.yiguoimg.com/d/others/171127/9288715720074107.jpg",
                 "http://img07.yiguoimg.com/e/others/170515/9288707875676847.jpg"
             ],
-            "col3":"http://img06.yiguoimg.com/d/others/180117/9288718115087409.jpg",
-            "logo_list":[
+            "col3": "http://img06.yiguoimg.com/d/others/180117/9288718115087409.jpg",
+            "logo_list": [
                 "http://img06.yiguoimg.com/e/others/160613/9570169801515213.png",
                 "http://img06.yiguoimg.com/e/others/160518/9288694301040818.jpg",
                 "http://img05.yiguoimg.com/e/others/151217/9288691149414289.jpg",
@@ -150,7 +218,7 @@
         }
     },
     "floor8": {
-        "floor_id":"F8",
+        "floor_id": "F8",
         "floortit": "乳品糕点",
         "keywords": [
             "味全乳品",
@@ -159,15 +227,15 @@
         ],
         "floor_slide": "http://img07.yiguoimg.com/d/others/170904/9288712324588324.jpg",
         "floor_main": {
-            "col1":"http://img05.yiguoimg.com/e/others/161214/9288699442438542.jpg",
-            "col2":[
+            "col1": "http://img05.yiguoimg.com/e/others/161214/9288699442438542.jpg",
+            "col2": [
                 "http://img05.yiguoimg.com/d/others/180117/9288718115152945.jpg",
                 "http://img07.yiguoimg.com/d/others/171127/9288715719877499.jpg",
                 "http://img05.yiguoimg.com/e/others/170314/9288705202528878.jpg",
                 "http://img07.yiguoimg.com/e/others/161219/9288699556438419.jpg"
             ],
-            "col3":"http://img06.yiguoimg.com/d/others/171121/9288715439022965.jpg",
-            "logo_list":[
+            "col3": "http://img06.yiguoimg.com/d/others/171121/9288715439022965.jpg",
+            "logo_list": [
                 "http://img07.yiguoimg.com/e/others/151104/9288689523662692.jpg",
                 "http://img05.yiguoimg.com/e/others/170208/9288700927287880.jpg",
                 "http://img05.yiguoimg.com/e/others/160222/9288692501618774.jpg",
@@ -176,7 +244,7 @@
         }
     },
     "floor9": {
-        "floor_id":"F9",
+        "floor_id": "F9",
         "floortit": "饮料酒水",
         "keywords": [
             "饮用水",
@@ -185,13 +253,13 @@
         ],
         "floor_slide": "http://img05.yiguoimg.com/d/others/180117/9288718115185713.jpg",
         "floor_main": {
-            "col1":"http://img05.yiguoimg.com/e/others/170616/9288709184463568.jpg",
-            "col2":[
+            "col1": "http://img05.yiguoimg.com/e/others/170616/9288709184463568.jpg",
+            "col2": [
                 "http://img07.yiguoimg.com/e/others/170302/9288704727917154.jpg",
                 "http://img05.yiguoimg.com/e/others/170317/9288705358013041.jpg"
             ],
-            "col3":"http://img05.yiguoimg.com/e/others/161209/9288699318608265.jpg",
-            "logo_list":[
+            "col3": "http://img05.yiguoimg.com/e/others/161209/9288699318608265.jpg",
+            "logo_list": [
                 "http://img07.yiguoimg.com/e/others/170221/9288701232128597.jpg",
                 "http://img05.yiguoimg.com/e/others/150927/9288685536812859.jpg",
                 "http://img05.yiguoimg.com/e/others/150927/9288685536943931.jpg",
@@ -200,7 +268,7 @@
         }
     },
     "floor10": {
-        "floor_id":"F10",
+        "floor_id": "F10",
         "floortit": "方便速食",
         "keywords": [
             "港式面点",
@@ -209,15 +277,15 @@
         ],
         "floor_slide": "http://img05.yiguoimg.com/e/others/170411/9288706367070859.jpg",
         "floor_main": {
-            "col1":"http://img06.yiguoimg.com/d/others/171121/9288715437024117.jpg",
-            "col2":[
+            "col1": "http://img06.yiguoimg.com/d/others/171121/9288715437024117.jpg",
+            "col2": [
                 "http://img06.yiguoimg.com/d/others/171121/9288715437253493.jpg",
                 "http://img07.yiguoimg.com/e/others/160928/9288697425273148.jpg",
                 "http://img07.yiguoimg.com/d/others/171121/9288715437384565.jpg",
                 "http://img06.yiguoimg.com/e/others/161118/9288698679501170.jpg"
             ],
-            "col3":"http://img05.yiguoimg.com/d/others/171127/9288715720139643.jpg",
-            "logo_list":[
+            "col3": "http://img05.yiguoimg.com/d/others/171127/9288715720139643.jpg",
+            "logo_list": [
                 "http://img05.yiguoimg.com/e/others/151008/9288686653382472.jpg",
                 "http://img07.yiguoimg.com/e/others/151023/9570164236722007.png",
                 "http://img05.yiguoimg.com/e/others/151222/9288691261546390.jpg",

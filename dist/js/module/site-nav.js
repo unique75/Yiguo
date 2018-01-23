@@ -1,9 +1,11 @@
 define(['jquery', 'jq-cookie'], function ($, jqCookie) {
+    //鼠标移入或离开进行添加或删除current类名，进行三角符的旋转操作
     $('.mobile').hover(function () {
         $(this).addClass('current');
     },function () {
         $(this).removeClass('current');
     })
+    //鼠标移入或离开进行添加或删除current类名，进行三角符的旋转操作
     $('.myyiguo').hover(function () {
         $(this).addClass('current');
     },function () {
@@ -20,7 +22,16 @@ define(['jquery', 'jq-cookie'], function ($, jqCookie) {
 
         $('#_logout').css({
             display: 'block'
-        }).find('a')
+        }).on('click', function () {
+            console.log(1);
+            $.cookie('userName', '');
+            $('#_loginname,#_logout').css({
+                display: 'none'
+            })
+            $('#_register,#_login').css({
+                display: 'block'
+            })
+        })
     } else {
         $('#_register,#_login').css({
             display: 'block'
