@@ -13,6 +13,7 @@ requirejs.config({
         'header-fixed': '../module/header-fixed',
         'shopcart-show': '../module/shopcart-show',
         'site-nav': '../module/site-nav',
-        'jq-cookie': '../plugin/jquery.cookie'
+        'jq-cookie': '../plugin/jquery.cookie',
+        'load-desc-details': '../module/load-desc-details'
     }
 })

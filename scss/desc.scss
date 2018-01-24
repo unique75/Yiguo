@@ -228,6 +228,9 @@ a:hover {
                     li.selected span {
                         border-color: #008842;
                     }
+                    li.selected i{
+                        display: block;
+                    }
                 }
 
                 .pro-service {

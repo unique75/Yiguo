@@ -735,6 +735,8 @@ a:hover {
         .wrap .product-info .summary-other .left .choose li.selected a,
         .wrap .product-info .summary-other .left .choose li.selected span {
           border-color: #008842; }
+        .wrap .product-info .summary-other .left .choose li.selected i {
+          display: block; }
         .wrap .product-info .summary-other .left .pro-service {
           padding-left: 10px;
           color: #999; }

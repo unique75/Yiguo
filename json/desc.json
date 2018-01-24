@@ -1,11 +1,60 @@
-[
+[{
+        "goods_id": "floor1_01",
+        "region": "进口水果",
+        "name": "香蕉",
+        "specifications": "常瀛进口香蕉6根(单根袋装)",
+        "describe": "独立包装，方便携带",
+        "price": "25.00",
+        "details": [{
+            "price": "25.00",
+            "spec": "6根/份"
+        }],
+        "pic": [{
+                "big": "http://img09.yiguoimg.com/e/items/2017/170717/9288710268887793_500.jpg",
+                "small": "http://img09.yiguoimg.com/e/items/2017/170717/9288710268887793_500.jpg"
+            },
+            {
+                "big": "http://img11.yiguoimg.com/e/items/2017/170717/9288710268822257_500.jpg",
+                "small": "http://img11.yiguoimg.com/e/items/2017/170717/9288710268822257_500.jpg"
+            },
+            {
+                "big": "http://img11.yiguoimg.com/e/items/2017/170717/9288710268855025_500.jpg",
+                "small": "http://img11.yiguoimg.com/e/items/2017/170717/9288710268855025_500.jpg"
+            }
+        ]
+    },
     {
-        "goods_id":"floor1_01",
-        "region":"进口水果",
-        "name":"莓",
-        "Specifications":"智利蓝莓4盒(约125g/盒)",
-        "describe":"能量之果 花青素小巨人",
-        "price":"59.90"
-
+        "goods_id": "floor1_02",
+        "region": "进口水果",
+        "name": "莓",
+        "specifications": "智利蓝莓4盒(约125g/盒)",
+        "describe": "能量之果 花青素小巨人",
+        "price": "59.90",
+        "details": [{
+                "price": "169.00",
+                "spec": "12盒/箱"
+            },
+            {
+                "price": "59.90",
+                "spec": "4盒/份"
+            },
+            {
+                "price": "15.90",
+                "spec": "1盒/份"
+            }
+        ],
+        "pic": [{
+                "big": "http://img09.yiguoimg.com/d/items/2017/171027/9288714357416795_500.jpg",
+                "small": "http://img09.yiguoimg.com/d/items/2017/171027/9288714357416795_500.jpg"
+            },
+            {
+                "big": "http://img13.yiguoimg.com/d/items/2017/171027/9288714357384027_500.jpg",
+                "small": "http://img13.yiguoimg.com/d/items/2017/171027/9288714357384027_500.jpg"
+            },
+            {
+                "big": "http://img09.yiguoimg.com/d/items/2017/171027/9288714357351259_500.jpg",
+                "small": "http://img09.yiguoimg.com/d/items/2017/171027/9288714357351259_500.jpg"
+            }
+        ]
     }
 ]

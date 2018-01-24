@@ -19,7 +19,6 @@ define(['jquery'], function($) {
             var keyWords = '';
             for(var i in data.keywords){
                 keyWords += `<a href="javascript:;" target="_blank" class="">${data.keywords[i]}</a>`
-
             }
             var strCol2 = '';
             for (var i in data.floor_main.col2) {

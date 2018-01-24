@@ -36,6 +36,7 @@ require(['../config'], function() {
                             $('#msg-wrap').find('div').removeClass('msg-error').html('');
                             flag = true;
                             break;//当 当前的循环判断输入框的内容和存储的数据的某一条相等时，break，不再执行后边的循环
+                                //否则如果继续执行后边的循环 就错过了这个对的循环 最后return的值就变成false了 最后的验证就不会通过
                                 //进而执行下面的代码，也就到了return返回值的时候了
                         }
                     }

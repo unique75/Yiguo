@@ -1,0 +1,876 @@
+@charset "UTF-8";
+body,
+dd,
+dl,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+ol,
+option,
+p,
+td,
+textarea,
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #444; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+a,
+input {
+  outline: none; }
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 100; }
+
+em,
+i {
+  font-style: normal; }
+
+i,
+s {
+  display: inline-block;
+  vertical-align: middle; }
+
+body {
+  font: 12px Arial,Verdana,"\5b8b\4f53";
+  color: #444; }
+
+#w {
+  background: #f7f8f8; }
+
+/*通用warp*/
+.wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+.clearfix:after,
+.wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.btn-green-l, .btn-green-s, .btn-orange-s {
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  font: 18px/50px "Microsoft YaHei"; }
+
+/*site-nav*/
+#site-nav {
+  z-index: 99;
+  position: relative;
+  background: #f7f9f8; }
+  #site-nav .wrap {
+    height: 30px; }
+    #site-nav .wrap s {
+      position: absolute;
+      top: 13px;
+      right: 8px;
+      width: 8px;
+      height: 4px;
+      margin-left: 5px;
+      background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat 0 0;
+      transition: transform 0.2s ease-in; }
+    #site-nav .wrap .fl {
+      float: left; }
+      #site-nav .wrap .fl li {
+        float: left;
+        line-height: 30px;
+        margin-right: 10px; }
+      #site-nav .wrap .fl .city {
+        position: relative;
+        color: #008842; }
+      #site-nav .wrap .fl .city-sz {
+        float: left;
+        height: 16px;
+        line-height: 16px;
+        margin: 7px 0;
+        cursor: pointer; }
+      #site-nav .wrap .fl .city-tit {
+        float: left; }
+        #site-nav .wrap .fl .city-tit .city-name {
+          z-index: 100;
+          position: relative;
+          display: block;
+          float: left;
+          height: 20px;
+          line-height: 20px;
+          margin-top: 5px;
+          padding: 0 20px 5px 5px;
+          color: #008842;
+          cursor: pointer; }
+          #site-nav .wrap .fl .city-tit .city-name s {
+            top: 9px; }
+    #site-nav .wrap .fr {
+      float: right; }
+      #site-nav .wrap .fr li {
+        float: right;
+        position: relative;
+        line-height: 30px;
+        padding: 0 10px;
+        text-align: center; }
+      #site-nav .wrap .fr .con {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        border: 1px solid #b4c1a3;
+        background: #fff; }
+      #site-nav .wrap .fr i {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+        background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat left top; }
+      #site-nav .wrap .fr .tit a {
+        display: block;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 20px 0 10px;
+        cursor: pointer;
+        z-index: 100;
+        border: solid #f7f9f8;
+        border-width: 0 1px;
+        position: relative; }
+      #site-nav .wrap .fr .mobile {
+        padding: 0; }
+        #site-nav .wrap .fr .mobile i {
+          background-position: -64px 0; }
+        #site-nav .wrap .fr .mobile .con {
+          width: 125px;
+          padding: 10px;
+          line-height: 25px;
+          display: none; }
+          #site-nav .wrap .fr .mobile .con .item {
+            margin: 5px 0; }
+      #site-nav .wrap .fr .myyiguo {
+        padding: 0; }
+        #site-nav .wrap .fr .myyiguo i {
+          background-position: -40px 0; }
+        #site-nav .wrap .fr .myyiguo .con {
+          width: 100px;
+          padding: 5px 12px;
+          text-align: left;
+          display: none; }
+          #site-nav .wrap .fr .myyiguo .con a {
+            display: block;
+            line-height: 25px;
+            color: #727272; }
+          #site-nav .wrap .fr .myyiguo .con b {
+            margin-left: 10px;
+            padding: 0 5px;
+            color: #fff;
+            background: #008842;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            border-radius: 16px; }
+      #site-nav .wrap .fr .current .tit a {
+        border-color: #b4a1c3;
+        background: #fff;
+        padding-bottom: 1px; }
+      #site-nav .wrap .fr .current s {
+        transform: rotate(180deg); }
+      #site-nav .wrap .fr .current .con {
+        display: block; }
+      #site-nav .wrap .fr .pay i {
+        width: 22px;
+        background-position: -147px 0; }
+      #site-nav .wrap .fr .tel i {
+        background-position: -86px 0; }
+
+.clearfix:after,
+.wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/*header*/
+.shopping-cart {
+  z-index: 88;
+  float: right;
+  position: relative; }
+
+header {
+  background: #e0e0e0; }
+  header .wrap {
+    height: 58px;
+    padding: 15px 0 5px; }
+    header .wrap .logo {
+      width: 280px;
+      float: left;
+      margin-right: 10px; }
+      header .wrap .logo a {
+        display: block;
+        width: 145px;
+        height: 50px;
+        background: url("http://static01.yiguo.com/www/images/header/logo.png") no-repeat 0 0; }
+    header .wrap .search {
+      position: relative;
+      width: 528px;
+      float: left; }
+      header .wrap .search .search-input {
+        float: left;
+        width: 425px;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 10px;
+        border: 1px solid #008842;
+        background: #e0e0e0;
+        color: #999; }
+      header .wrap .search .search-btn {
+        float: left;
+        display: block;
+        width: 81px;
+        height: 28px;
+        line-height: 28px;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        background: #008842; }
+      header .wrap .search .search-keywords {
+        height: 30px;
+        line-height: 30px; }
+        header .wrap .search .search-keywords a {
+          margin-right: 5px;
+          color: #727272;
+          display: inline-block; }
+    header .wrap .shopping-btn {
+      width: 170px;
+      height: 28px;
+      padding: 6px 0;
+      line-height: 28px;
+      text-align: center;
+      font-size: 25px;
+      border: 1px solid #008842;
+      background: #fff;
+      cursor: pointer; }
+      header .wrap .shopping-btn a {
+        display: block;
+        color: #008842; }
+      header .wrap .shopping-btn .totleNum {
+        display: inline-block;
+        vertical-align: middle;
+        width: 28px;
+        height: 20px;
+        margin-right: 10px;
+        font-size: 12px;
+        padding: 0;
+        background: url("http://static01.yiguo.com/www/images/header/header-img.png") no-repeat -112px 0; }
+        header .wrap .shopping-btn .totleNum b {
+          display: block;
+          width: 24px;
+          line-height: 12px;
+          margin-right: 4px;
+          text-align: center; }
+    header .wrap .shopping-list {
+      z-index: 88;
+      display: none;
+      position: absolute;
+      top: 41px;
+      right: 0;
+      width: 380px;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #007f4d; }
+      header .wrap .shopping-list .nogoods {
+        width: 380px;
+        height: 120px;
+        display: none;
+        line-height: 120px;
+        text-align: center;
+        background: url("http://static01.yiguo.com/www/images/none-bg-w190.jpg") no-repeat center #fff; }
+      header .wrap .shopping-list ul {
+        display: block;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 380px;
+        max-height: 264px;
+        margin: 10px 0 0;
+        padding: 0; }
+        header .wrap .shopping-list ul li {
+          position: relative;
+          overflow: hidden;
+          zoom: 1;
+          background: #fff;
+          height: 45px;
+          padding: 0 0 15px;
+          line-height: 20px; }
+          header .wrap .shopping-list ul li .l {
+            float: left;
+            margin-right: 5px;
+            width: 45px;
+            height: 45px; }
+          header .wrap .shopping-list ul li .c {
+            float: left;
+            width: 222px; }
+            header .wrap .shopping-list ul li .c a {
+              display: block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+          header .wrap .shopping-list ul li .r {
+            float: left;
+            text-align: right;
+            width: 90px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+            header .wrap .shopping-list ul li .r b {
+              color: #e7380d;
+              font-weight: bold; }
+            header .wrap .shopping-list ul li .r a {
+              display: block;
+              color: #888; }
+      header .wrap .shopping-list .price-total {
+        font-size: 12px;
+        line-height: 27px;
+        margin-top: 5px;
+        padding-top: 10px;
+        text-align: right;
+        border-top: 1px solid #dcdcdc; }
+        header .wrap .shopping-list .price-total span {
+          margin-left: 15px; }
+        header .wrap .shopping-list .price-total b {
+          color: #e7380d;
+          font-size: 16px;
+          margin: 0 5px; }
+        header .wrap .shopping-list .price-total .settleup {
+          display: inline-block;
+          width: 75px;
+          height: 27px;
+          font-size: 12px;
+          text-align: center;
+          color: #fff;
+          background: #008842; }
+
+/*header-nav*/
+#header-nav {
+  z-index: 77;
+  position: relative; }
+  #header-nav .catalogs {
+    float: left;
+    position: relative; }
+    #header-nav .catalogs .catalogs-title {
+      width: 180px;
+      height: 38px;
+      position: relative;
+      text-align: center;
+      background: #008842; }
+      #header-nav .catalogs .catalogs-title a {
+        overflow: hidden;
+        font: bold 15px/16px "Microsoft YaHei";
+        color: #fff;
+        display: block;
+        height: 16px;
+        padding: 11px 0; }
+    #header-nav .catalogs .catalogs-list {
+      position: absolute;
+      height: 462px;
+      background: rgba(255, 255, 255, 0.9); }
+      #header-nav .catalogs .catalogs-list .current h3 a {
+        z-index: 78;
+        padding: 8px 0 8px 15px;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid #bbb;
+        border-right: 0; }
+      #header-nav .catalogs .catalogs-list .current h3 i {
+        margin-left: 7px;
+        transition: all 0.2s ease-in; }
+      #header-nav .catalogs .catalogs-list .sub-item {
+        z-index: 3;
+        display: none;
+        position: absolute;
+        top: -38px;
+        left: 180px;
+        width: 215px;
+        height: 464px;
+        padding: 17px 20px;
+        border: 1px solid #bbb;
+        background: rgba(255, 255, 255, 0.9); }
+      #header-nav .catalogs .catalogs-list h3 a {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        width: 165px;
+        height: 24px;
+        padding: 9px 0 9px 15px;
+        font: normal 14px/24px "Microsoft YaHei"; }
+        #header-nav .catalogs .catalogs-list h3 a i {
+          overflow: hidden;
+          width: 24px;
+          height: 24px;
+          margin-right: 15px;
+          background: url("http://static01.yiguo.com/www/images/header/nav-icon.png") no-repeat 0 0;
+          -webkit-transition: all 0.3s ease-in;
+          -moz-transition: all 0.3s ease-in;
+          -ms-transition: all 0.3s ease-in;
+          -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in; }
+        #header-nav .catalogs .catalogs-list h3 a s {
+          display: none;
+          position: absolute;
+          top: 7px;
+          right: 18px;
+          font-family: Arial;
+          text-decoration: none; }
+      #header-nav .catalogs .catalogs-list h4 {
+        margin-bottom: 10px;
+        font: normal 18px "Microsoft YaHei";
+        text-decoration: underline; }
+        #header-nav .catalogs .catalogs-list h4 a {
+          color: #20985a; }
+      #header-nav .catalogs .catalogs-list .sub-list {
+        display: inline-block;
+        line-height: 25px;
+        margin-right: 30px;
+        color: #686868; }
+        #header-nav .catalogs .catalogs-list .sub-list a {
+          display: inline-block;
+          line-height: 25px;
+          margin-right: 30px;
+          color: #686868; }
+      #header-nav .catalogs .catalogs-list .catalogs-ad {
+        position: absolute;
+        bottom: 10px; }
+        #header-nav .catalogs .catalogs-list .catalogs-ad a {
+          display: block; }
+      #header-nav .catalogs .catalogs-list .t01_channelhome a i {
+        background-position: 0 0; }
+      #header-nav .catalogs .catalogs-list .t02_channelhome a i {
+        background-position: -24px 0; }
+      #header-nav .catalogs .catalogs-list .t03_channelhome a i {
+        background-position: -144px 0; }
+      #header-nav .catalogs .catalogs-list .t04_channelhome a i {
+        background-position: -96px 0; }
+      #header-nav .catalogs .catalogs-list .t05_channelhome a i {
+        background-position: -48px 0; }
+      #header-nav .catalogs .catalogs-list .t06_channelhome a i {
+        background-position: -72px 0; }
+      #header-nav .catalogs .catalogs-list .t012_channelhome a i {
+        background-position: 0 0; }
+      #header-nav .catalogs .catalogs-list .t08_channelhome a i {
+        background-position: -120px 0; }
+      #header-nav .catalogs .catalogs-list .t10_channelhome a i {
+        background-position: -168px 0; }
+      #header-nav .catalogs .catalogs-list .t07_channelhome a i {
+        background-position: -192px 0; }
+      #header-nav .catalogs .catalogs-list .t09_channelhome a i {
+        background-position: -216px 0; }
+      #header-nav .catalogs .catalogs-list .t11_channelhome a i {
+        background-position: -240px 0; }
+
+.footer {
+  zoom: 1;
+  clear: both;
+  position: relative;
+  padding-bottom: 20px;
+  border-top: 1px solid #e0e0e0; }
+  .footer .wrap {
+    margin: 50px auto 0; }
+  .footer dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+    display: inline; }
+    .footer dl dt {
+      height: 23px;
+      line-height: 23px;
+      background: url("http://static01.yiguo.com/www/images/footer_icon.png") no-repeat;
+      font-size: 14px;
+      text-indent: 40px; }
+    .footer dl dd {
+      border-left: 1px dashed #A8A8A8;
+      padding-left: 20px;
+      height: 110px;
+      min-height: 110px;
+      margin: 15px 0 0 13px; }
+      .footer dl dd a {
+        color: #575556;
+        line-height: 22px; }
+  .footer .service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px; }
+    .footer .service span {
+      display: inline-block;
+      padding: 0 10px; }
+  .footer .copyright {
+    clear: both;
+    color: #717171;
+    text-align: center;
+    line-height: 22px; }
+    .footer .copyright a {
+      color: #717171; }
+  .footer .authentication a {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    zoom: 1;
+    vertical-align: middle; }
+  .footer .col1 dt {
+    background-position: 0 0; }
+  .footer .col2 dt {
+    background-position: 0 -23px; }
+  .footer .col3 dt {
+    background-position: 0 -46px; }
+  .footer .col4 dt {
+    background-position: 0 -69px; }
+  .footer .col5 dt {
+    background-position: 0 -92px; }
+
+/*右下角悬浮*/
+.sidebar {
+  display: block;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 47%;
+  margin-right: -625px;
+  width: 56px; }
+  .sidebar .s-btn {
+    overflow: hidden;
+    display: block;
+    width: 50px;
+    height: 42px;
+    margin-bottom: 10px;
+    background: url("http://static01.yiguo.com/www/images/sidebar.png") no-repeat 0 0; }
+  .sidebar .service {
+    background-position: 0 -46px; }
+    .sidebar .service:hover {
+      background-position: -55px -46px; }
+  .sidebar .goTop {
+    display: none;
+    background-position: 0 0; }
+    .sidebar .goTop:hover {
+      background-position: -55px 0; }
+
+/*header*/
+header .steps {
+  float: right;
+  padding-top: 20px;
+  margin-right: 40px; }
+  header .steps li {
+    position: relative;
+    float: left; }
+    header .steps li b {
+      background: url("http://static01.yiguo.com/cart/images/order-step.png") no-repeat;
+      width: 36px;
+      height: 36px;
+      display: block;
+      float: left; }
+    header .steps li span {
+      position: absolute;
+      top: -20px;
+      right: 0;
+      display: inline-block;
+      width: 160px;
+      text-align: center;
+      right: -62px;
+      color: #333; }
+    header .steps li i {
+      width: 165px;
+      height: 6px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-width: 1px 0;
+      display: block;
+      float: left;
+      margin-top: 15px;
+      margin-right: 0;
+      overflow: hidden; }
+    header .steps li .b3 {
+      background-position: -84px 0; }
+  header .steps .on .b1 {
+    background-position: 0 -44px; }
+  header .steps .on span {
+    color: #008842; }
+
+/*购物车*/
+.cart {
+  margin-top: 20px; }
+  .cart h2 {
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-bottom: 2px solid #05984d;
+    text-indent: -9999em;
+    position: relative; }
+  .cart .cart-alert,
+  .cart .order-alert {
+    border: 1px solid #e3e6e0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff; }
+  .cart .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px; }
+    .cart .cart-table th {
+      height: 40px;
+      background-color: #f1f1f1;
+      font: 12px/40px Simsun;
+      color: #262626;
+      padding: 0 10px; }
+    .cart .cart-table th.cart-t-check {
+      width: 120px;
+      text-align: left;
+      padding-left: 20px; }
+      .cart .cart-table th.cart-t-check input {
+        margin-right: 20px;
+        vertical-align: middle; }
+    .cart .cart-table td {
+      border-top: 1px solid #ebebeb;
+      padding: 10px;
+      text-align: center; }
+      .cart .cart-table td img {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ebebeb;
+        position: relative; }
+    .cart .cart-table td.cart-t-check {
+      text-align: left;
+      padding-left: 20px; }
+    .cart .cart-table td.cart-t-info {
+      text-align: left; }
+    .cart .cart-table .cart-t-img {
+      width: 80px;
+      position: relative; }
+    .cart .cart-table .cart-t-info a {
+      font: 14px/2.4em Simsun; }
+  .cart .cart-t-check {
+    width: 20px; }
+  .cart .cart-t-price {
+    width: 100px;
+    color: #262626;
+    font-size: 14px;
+    line-height: 1em; }
+  .cart .cart-t-num {
+    width: 110px;
+    color: #262626;
+    font: 12px/1em Simsun; }
+  .cart .quantity-form {
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+    height: 30px; }
+  .cart .decrement {
+    float: left;
+    background-position: 0 -40px; }
+  .cart .decrement,
+  .cart .increment {
+    margin: 0;
+    width: 18px;
+    height: 24px; }
+  .cart .increment {
+    float: right;
+    background-position: -20px -40px; }
+  .cart h2,
+  .cart .decrement,
+  .cart .increment,
+  .cart .order h2,
+  .cart i {
+    background-image: url("http://static01.yiguo.com/cart/images/bg_cart.png");
+    background-repeat: no-repeat; }
+  .cart .itxt {
+    position: absolute;
+    left: 22px;
+    top: 0;
+    border: 1px solid #cacbcb;
+    width: 42px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+    font-family: verdana;
+    color: #333;
+    -webkit-appearance: none; }
+  .cart .cart-t-total {
+    width: 110px;
+    color: #e93005;
+    font-size: 14px;
+    line-height: 1em; }
+  .cart .cart-t-spec {
+    width: 110px;
+    color: #262626;
+    font: 12px/1em Simsun; }
+  .cart .cart-t-opera {
+    width: 110px;
+    color: #262626;
+    font: 12px/2em Simsun; }
+  .cart .cart-footer {
+    background-color: #f7f7f7;
+    font-size: 12px;
+    line-height: 1em;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px; }
+    .cart .cart-footer .wrap {
+      width: 100%; }
+    .cart .cart-footer .fl {
+      float: left; }
+      .cart .cart-footer .fl label {
+        margin-left: 20px;
+        vertical-align: middle; }
+        .cart .cart-footer .fl label input {
+          margin-right: 5px; }
+      .cart .cart-footer .fl a {
+        font: 12px/40px Simsun;
+        margin-left: 20px; }
+        .cart .cart-footer .fl a i {
+          display: inline-block;
+          width: 14px;
+          height: 16px;
+          background-position: -100px -40px;
+          margin-right: 5px;
+          vertical-align: middle; }
+    .cart .cart-footer .fr {
+      float: right; }
+      .cart .cart-footer .fr span {
+        margin-right: 20px; }
+        .cart .cart-footer .fr span em {
+          color: #ff5317;
+          font-weight: bold;
+          margin: 0 5px;
+          font-size: 18px;
+          font-style: normal;
+          line-height: 1em; }
+      .cart .cart-footer .fr .ub em {
+        color: #249c61;
+        font: bold 14px/1em Simsun; }
+      .cart .cart-footer .fr .fs14 {
+        font-size: 14px; }
+      .cart .cart-footer .fr .btn {
+        font: bold 18px/1em "微软雅黑";
+        background-color: #ff5317;
+        color: #fff;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-left: 0; }
+  .cart input {
+    margin-right: 5px; }
+  .cart .preferential-buy {
+    position: relative;
+    border: 1px solid #e3e6e0;
+    margin-top: 25px;
+    overflow: hidden;
+    background: #fff; }
+    .cart .preferential-buy h3 {
+      border-bottom: 1px solid #79ae92;
+      background-color: #eff7f1;
+      height: 38px;
+      padding-left: 18px;
+      color: #008842;
+      font: bold 16px/38px Simsun; }
+      .cart .preferential-buy h3 i {
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        background-position: -120px -40px;
+        margin-right: 8px;
+        vertical-align: middle; }
+      .cart .preferential-buy h3 a {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        display: block;
+        font-size: 12px;
+        color: #666;
+        font-weight: normal; }
+        .cart .preferential-buy h3 a i {
+          width: 12px;
+          height: 15px;
+          background-position: -147px -40px;
+          margin-right: 5px; }
+    .cart .preferential-buy ul {
+      margin-left: 2px; }
+      .cart .preferential-buy ul li {
+        width: 299px;
+        height: 90px;
+        background-color: #fff;
+        padding: 10px 0;
+        border: 1px solid #e3e6e0;
+        border-bottom: 1px solid #e3e6e0;
+        float: left;
+        margin-left: -2px;
+        margin-bottom: -1px; }
+      .cart .preferential-buy ul .product {
+        position: relative;
+        overflow: hidden; }
+        .cart .preferential-buy ul .product .p-img {
+          float: left;
+          width: 90px;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          overflow: hidden;
+          position: relative; }
+          .cart .preferential-buy ul .product .p-img img {
+            width: 100%; }
+        .cart .preferential-buy ul .product .p-info {
+          padding: 0 10px; }
+          .cart .preferential-buy ul .product .p-info .p-name {
+            line-height: 20px;
+            padding: 2px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .cart .preferential-buy ul .product .p-info .p-price {
+            position: relative;
+            color: #333;
+            line-height: 24px; }
+            .cart .preferential-buy ul .product .p-info .p-price span {
+              float: none; }
+              .cart .preferential-buy ul .product .p-info .p-price span strong {
+                font-size: 20px;
+                color: #e93005; }
+                .cart .preferential-buy ul .product .p-info .p-price span strong b {
+                  font-weight: normal;
+                  color: #333;
+                  margin-right: 3px; }
+            .cart .preferential-buy ul .product .p-info .p-price del {
+              float: none;
+              position: absolute;
+              right: 0;
+              top: 0; }
+        .cart .preferential-buy ul .product .p-hg a {
+          padding: 3px 8px;
+          background-color: #f14b00;
+          color: #fff;
+          font: bold 12px/3 Simsun;
+          border-radius: 2px; }
