@@ -1,12 +1,14 @@
 require(['../config'], function() {
-    require(['jquery', 'template', 'swiper', 'search-keywords', 'goods-panel', 'load-floor', 'load-floor2', 'load-floor3', 'floor-guide','go-top', 'header-fixed', 'shopcart-show', 'site-nav'],
-        function($, tem, swiper, searchKeywords, goodsPanel, loadFloor, loadFloor2, loadFloor3, floorGuide, goTop, headerFixed, shopcartSHow, siteNav) {
+    require(['jquery', 'template', 'swiper', 'search-keywords', 'goods-panel', 'load-floor', 'load-floor2', 'load-floor3', 'floor-guide','go-top', 'header-fixed', 'shopcart-show', 'site-nav', 'jq-cookie'],
+        function($, tem, swiper, searchKeywords, goodsPanel, loadFloor, loadFloor2, loadFloor3, floorGuide, goTop, headerFixed, shopCartShow, siteNav, jqCookie) {
             $(function() {
                 (function() {
                     // search-keywords
                     searchKeywords.init();
                     // 全部商品分类
                     goodsPanel.init('.catalogs .item');
+                    //页面打开先渲染一次购物车商品列表
+                    shopCartShow.rendering_page();
                     //swiper
                     swiperStart();
                     //加载楼层
